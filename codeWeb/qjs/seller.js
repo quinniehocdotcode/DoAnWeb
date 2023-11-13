@@ -80,11 +80,15 @@ const alertNumber = document.querySelector('#alert-number');
 const alertName = document.querySelector('#alert-name');
 let alert = [
     {
-        name:"qui cute",
+        name:"Hong Quang",
         number:"12****789"
     },
     {
-        name:"qui dz",
+        name:"Thanh Phuong",
+        number:"123****556"
+    },
+    {
+        name:"Quen ten roi",
         number:"123****556"
     }
 ]
@@ -92,7 +96,7 @@ let index = 0;
 const functionAlert = setInterval(()=>{
     index++;
     if(index%2==0){
-        alertName.innerText = `Anh: ${alert[0].name}`
+        alertName.innerText = `Anh: ${alert[0].name} mua hàng thành công`
         alertNumber.innerText = `${alert[0].number} `
         alertMessage.style.display="block"
         setTimeout(()=>{
@@ -101,7 +105,7 @@ const functionAlert = setInterval(()=>{
         
     }
     else{
-            alertName.innerText = `Anh: ${alert[1].name}`
+            alertName.innerText = `Chị: ${alert[1].name} mua hàng thành công`
             alertNumber.innerText = `${alert[1].number}`
             alertMessage.style.display="block"
         setTimeout(()=>{
@@ -113,7 +117,7 @@ const functionAlert = setInterval(()=>{
 //  Js For Control Account User
 let account = {
         name:"Hong Qui",
-        email:"quidz@gmail.com",
+        email:"Nguyenhoangthanhphuong@gmail.com",
         number:900990022,
         password:12345678,
         active:1
@@ -170,15 +174,25 @@ btnActiveUserKey.addEventListener('click',()=>{
     // controlUser = document.querySelector('#control-user-btn');
     // controlAccountUser = document.querySelector('.control-account-user');
     // content = document.querySelector('.content-seller');
+    const uploadBtn =  document.querySelector('#upload-file-btn') ;
+    let  controlUpload =  document.querySelector('.add-product-form-file-parent');
+   // các nút chức năng cho admin
     let contentParent = document.querySelector('.content-seller-parent');
     update.addEventListener('click',()=>{
         contentParent.style.display='block'
         controlAccountUser.style.display='none'
+        controlUpload.style.display='none';
+    
     })
     controlUser.addEventListener('click',()=>{
         contentParent.style.display='none'
         controlAccountUser.style.display='block'
-    
+        controlUpload.style.display='none';
+    })
+    uploadBtn.addEventListener('click',()=>{
+        contentParent.style.display='none'
+        controlAccountUser.style.display='none'
+        controlUpload.style.display='block';
     })
 // JS for Upload product from file
 
@@ -203,16 +217,15 @@ uploadImages.forEach((fileupload, index) => {
 
 function showAlert(message) {
     // Viết mã hiển thị thông báo theo ý muốn của bạn
-        console.error(message);
-        alert(message);
+        //console.error(message);
+        window.alert(message);
 }
 /// hover vào ảnh thì sẽ làm nó xuất hiện bên ảnh lớn.
-displayBigImg.src = imagePaths[0];
 displayimg.forEach((element,index) => {
     element.addEventListener('mouseover',()=>{
         displayBigImg.src = imagePaths[index];
     })
     element.addEventListener('mouseout',()=>{
-        displayBigImg.src = imagePaths[1];
+        displayBigImg.src = imagePaths[0];
     })
 });
