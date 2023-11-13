@@ -198,7 +198,6 @@ uploadImages.forEach((fileupload, index) => {
         } else {
             showAlert('Chỉ chấp nhận tệp hình ảnh');
         }
-        displayBigImg.src = imagePaths[index];
     });
 });
 
@@ -207,3 +206,13 @@ function showAlert(message) {
         console.error(message);
         alert(message);
 }
+/// hover vào ảnh thì sẽ làm nó xuất hiện bên ảnh lớn.
+displayBigImg.src = imagePaths[0];
+displayimg.forEach((element,index) => {
+    element.addEventListener('mouseover',()=>{
+        displayBigImg.src = imagePaths[index];
+    })
+    element.addEventListener('mouseout',()=>{
+        displayBigImg.src = imagePaths[1];
+    })
+});
