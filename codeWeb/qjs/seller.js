@@ -229,3 +229,4 @@ displayimg.forEach((element,index) => {
         displayBigImg.src = imagePaths[0];
     })
 });
+//  JS cho nut add product
