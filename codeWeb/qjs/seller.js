@@ -84,7 +84,7 @@ let alert = [
         number:"12****789"
     },
     {
-        name:"Thanh Phuong",
+        name:"Dinh Quynh",
         number:"123****556"
     },
     {
