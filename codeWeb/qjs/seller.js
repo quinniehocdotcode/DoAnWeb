@@ -207,20 +207,3 @@ function showAlert(message) {
         console.error(message);
         alert(message);
 }
-
-
-// function handleFileSelect() {
-//     const selectedFile = event.target.files[0];
-
-//     if (selectedFile) {
-//         // Tạo URL từ tệp đã chọn
-//         const imageURL = URL.createObjectURL(selectedFile);
-
-//         // Hiển thị ảnh
-//         imageDisplay.src = imageURL;
-
-//         // Tại đây, bạn có thể thực hiện các xử lý khác với URL đã tạo
-//     }
-// }
-
-//// js 
