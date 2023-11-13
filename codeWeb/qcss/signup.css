@@ -1,0 +1,20 @@
+.logo-content{
+    position: relative;
+}
+.logo{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);  
+}
+.box-input{
+    margin-top: 80px;
+}
+.terms-and-protect{
+    margin-top: 80px;
+    text-align: center;
+}
+.terms-and-protect span a{
+    text-decoration: none;
+    color:rgba(4, 70, 146, 0.87);
+}

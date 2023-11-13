@@ -1,0 +1,436 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.container {
+    background-color: #a99ae8;
+    width: 100%;
+}
+
+/* ----------css header ---------------*/
+header {
+    max-width: 100%;
+    max-height: 130px;
+    background-color: white;
+}
+
+.img_header {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.navbar_header {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 10px;
+    position: relative;
+}
+.logo_header {
+    width: 220px;
+    height: 40px;
+    max-width: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    margin: 0 10px;
+}
+/* icon menu */
+.menu_header {
+    width: 60px;
+    height: 100%;
+}
+.icon {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
+}
+.icon_menu{
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+}
+.icon_seemore {
+    width: 16px;
+    height: 16px;
+    align-items: center;
+    object-fit: cover;
+}
+.nav_overlay {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+.theloai {
+    background-color:white;
+    box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    min-height: 50px ;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    right: 40px;
+    border-radius: 8px;
+    z-index: 2;
+}
+.theloai h1 {
+    font-size: 24px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.theloai ul li {
+    display: inline-block;
+    margin: 0px 0px 20px 50px;
+    min-width: 20%;
+    list-style: none;
+}
+.theloai ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+/* hien thi danh sach khi chon */
+.menu_header:hover .theloai, .menu_header:hover .nav_overlay{
+    display: block;
+}
+
+/* thanh tim kiem */
+.search{
+    position: relative;
+    margin: 0 10px 0 5px;
+}
+.input_search {
+    height: 40px;
+    width: 600px;
+    min-width: 300px;
+    padding: 0 80px 0 10px;
+    border: 1px solid #CDCFD0;
+    border-radius: 8px; 
+}
+.icon_search{
+    position: absolute;
+    width: 72px;
+    height: 30px;
+    background-color: #C92127;
+    border: 2px solid #C92127;
+    border-radius: 8px;
+    padding: 3px 0px;
+    padding-left: 25px;
+    right: 4px;
+    top: 5px;
+    cursor: pointer;
+}
+.icon_search img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.tienich {
+    display: flex;
+    align-content: space-evenly;
+    text-align: center;
+}
+figure {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+/* content */
+.content {
+    background-color: white;
+    margin: 20px;
+}
+.content .tieude {
+    padding: 10px 50px;
+    background-color: #FCDAB0;
+}
+.list_box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 334px;
+    width: 234px;
+}
+.box:hover {
+    box-shadow: 0px 0px 20px -8px rgba(0, 0, 0, 0.5);
+}
+
+.box img {
+    width: 190px;
+    height: 190px;
+    margin-top: 10px;
+}
+.product_name {
+    font-size: 14px;
+    width: 234px;
+    margin: 10px;
+    padding-left: 8px;
+    text-align: center;
+}
+.product_name a {
+    text-decoration: none;
+    color: #333;
+}
+.product_price {
+    color: orange;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.box button {
+    padding: 2px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* css thanh chuyển trang */
+.pagination {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.page-number {
+    padding: 5px 15px;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid #333;
+    cursor: pointer;
+    color: black;
+}
+
+.prev {
+    border-radius: 5px 0px 0px 5px;
+
+}
+
+.next {
+    border-radius: 0px 5px 5px 0px;
+}
+
+
+/* -------------footer--------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo_footer{
+    margin: 10px 0px;
+    height: 50px;
+}
+footer p {
+    font-size: 14px;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+}
+.icon_app_footer {
+    margin: 10px 0px;
+}
+
+/* header tren mobie */
+.mobie {
+    background-color: #C92127;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    height: 120px;
+}
+.logo_header_mobie {
+    max-width: 100%;
+    height: 50px;
+}
+.nav_mobie {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+    padding: 0 5px;
+    align-items: center;
+}
+.icon_menu_mobie{
+    width: 36px;
+    height: 36px;
+}
+.icon_mycart_mobie {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.icon_account_mobie {
+    width: 34px;
+    height: 29px;
+    margin-left: 10px;
+}
+.input_search_mobie {
+    min-width: 200px;
+    width: 860px;
+    padding: 0 5px;
+    margin-left: 10px;height: 40px;
+    padding: 0 80px 0 24px;
+    border: 1px solid #CDCFD0;
+    border-radius: 6px;
+}
+
+
+.overlay_mobie {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+.theloai_mobie {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    bottom: 0;
+    background-color:white;
+    box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+    width: 350px;
+    max-width: 100%;
+    padding-bottom: 5px;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.2s, opacity linear 0.3s;
+}
+.back {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+.theloai_mobie h1 {
+    font-size: 24px;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+
+.theloai_mobie ul li {
+    margin: 10px 20px;
+    /* margin-left: 50px; */
+    list-style: none;
+}
+.theloai_mobie ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+#click:checked ~ .overlay_mobie {
+    display: block;
+}
+#click:checked ~ .theloai_mobie {
+    transform: translateX(0%);
+    opacity: 1;
+}
+@keyframes fadeIn {
+    from { 
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width:69em) {
+    header {
+        display: none;
+    }
+    .mobie {
+        display: flex;
+    }
+}
+/* css pop-up */
+
+
+figure{
+    position: relative;
+}
+.pop-up{
+    position: absolute;
+    background-color: white;
+    width: 300px;
+   right: 100%;
+   display: block;
+   padding: 15px 10px;
+
+
+}
+.pop-up p{
+ font-size: 15px;
+}
+.pop-up button{
+    border:none;
+    outline: none;
+    width: 70%;
+    height: 40px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.pop-up .login-1{
+    background-color: #C92127;
+    color: white;
+    font-weight: 500;
+}
+.pop-up .signin-1{
+    border: 2px solid #C92127;
+    background-color: white;
+    color: #C92127;
+    font-weight: 500;
+}
+.pop-up .signin-by-face{
+    background-color: #1478FC;
+    color: white;
+    font-weight: 500;
+}
+.hide{
+    opacity:0;
+}
