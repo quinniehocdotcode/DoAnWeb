@@ -386,6 +386,9 @@ footer a {
         display: flex;
     }
 }
+
+
+
 /* css pop-up */
 
 
@@ -414,6 +417,7 @@ figure{
     cursor: pointer;
     border-radius: 10px;
     font-size: 15px;
+    font-weight: bolder;
 }
 .pop-up .login-1{
     background-color: #C92127;
