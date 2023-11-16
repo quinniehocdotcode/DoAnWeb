@@ -18,6 +18,9 @@ const ad = {
     email: 'admin@gmail.com',
     password: '123456789'
 };
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const numberRegex1 = /^0[0-9]{9}$/
+const numberRegex2 = /^\+84[0-9]{9}$/
 submitBtn.addEventListener('click',()=>{
     if(number != null){
         // if(number.value.length < 10){

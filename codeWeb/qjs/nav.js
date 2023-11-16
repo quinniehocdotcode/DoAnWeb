@@ -13,7 +13,7 @@ const popupUser = document.querySelector('.login-logout-popup');
 const popupText =  document.querySelector('.text-pop');
 const actionBtn = document.querySelector('.login-logout');
 const signinBtn=document.querySelector('.signin-1')
-const signinFaceBook=document.querySelector('.signin-by-face')
+const signinFaceBook=document.querySelector('.signin-by-face');
 iconAccount.addEventListener('click',()=>{
     popupUser.classList.toggle('hide');
 })
