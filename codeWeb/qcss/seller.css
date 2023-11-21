@@ -123,8 +123,8 @@
 }
 #img-product{
     width: 100%;
-    height: 70%;
-    object-fit:fill;
+    height: 450px;
+    object-fit:cover;
    
 }
 /* Quan lys sp */

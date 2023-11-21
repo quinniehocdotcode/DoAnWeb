@@ -53,6 +53,11 @@ update.addEventListener('click', () => {
     ///
     const BtnChangeImgBox=document.querySelectorAll('.btn-change-img-one');
     const ParentBox=document.querySelector(".parent-box-change-one-product-img");
+    ///
+    const InputImg = document.querySelector('#change-one-product-img');
+    const ChangeInputImg = document.querySelector('#box-btn-change-img'); 
+    const CancelInoutImg = document.querySelector('#cancle-btn')
+    const imgProduct = document.querySelectorAll('#img-product')
     for (let i = 0; i < sl.length; i++) {
         btnChange[i].addEventListener('click', () => {
             sl[i]=Number(numChange[i].value)+sl[i];
@@ -60,6 +65,7 @@ update.addEventListener('click', () => {
            listproduct[i].querySelector(".count-text").innerText =`So luong: ${sl[i]}`; 
         });
     }
+    let indeximg 
     for (let i = 0; i < sl.length; i++) {
         btnDelete[i].addEventListener('click', () => {
             alterDelete.classList.remove('hide');
@@ -73,14 +79,46 @@ update.addEventListener('click', () => {
             })
             
         });
+        //// JS change img
         BtnChangeImgBox[i].addEventListener("click",()=>{
             ParentBox.style.display="block";
+            indeximg = i;
         })
     }
-    
-    
+    //// JS change img
+    let imageUrl;
+    InputImg.addEventListener('change', () => {
+        const file = InputImg.files[0];
+        if (file && file.type.includes('image')) {
+            // Tạo URL từ tệp đã chọn
+             imageUrl = URL.createObjectURL(file);
+            //console.log(imageUrl)
+        } else {
+            showAlert('Chỉ chấp nhận tệp hình ảnh');
+            
+        }
+        })
+    ChangeInputImg.addEventListener("click",()=>{
+        imgProduct[indeximg].src = imageUrl;
+        ParentBox.style.display='none';
+    })
+    CancelInoutImg.addEventListener("click",()=>{
+        ParentBox.style.display='none';
+    })
 });
 // 
+// fileupload.addEventListener('change', () => {
+//     const file = fileupload.files[0];
+
+//     if (file && file.type.includes('image')) {
+//         // Tạo URL từ tệp đã chọn
+//         const imageUrl = URL.createObjectURL(file);
+//         imagePaths[index] = imageUrl;
+//         displayimg[index].src = imagePaths[index];
+//     } else {
+//         showAlert('Chỉ chấp nhận tệp hình ảnh');
+//     }
+// });
 
 // JS cho Alert message
 const alertMessage = document.querySelector('.alter-message');
