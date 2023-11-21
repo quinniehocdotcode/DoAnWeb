@@ -45,6 +45,14 @@ submitBtn.addEventListener('click',()=>{
     }
     else {
         loader.style.display='block';
+        if(!emailRegex.test(email.value) ){
+            setTimeout(()=>{
+                loader.style.display='none';
+            },2000)
+           
+            return showAlert("Sai định dạng email");
+
+        }
         if(email.value === ad.email ){
 
             if(password.value === ad.password){

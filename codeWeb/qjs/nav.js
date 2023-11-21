@@ -41,6 +41,7 @@ window.onload = ()=>{
         popupText.innerHTML = `Login as Facebook`;
         signinBtn.style.display='none';
         signinFaceBook.style.display='none';
+        actionBtn.innerHTML = 'Logout'
         actionBtn.addEventListener('click',()=>{
             sessionStorage.clear();
             location.reload();

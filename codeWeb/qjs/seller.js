@@ -28,6 +28,8 @@ let controlUser = document.querySelector('#control-user-btn');
                 <label for="count-product">Thêm số lượng:</label>
                 <input type="text" name="" class="count-product" id="count-product">
                 <br>
+                <button class="btn-change-img-one">Sửa ảnh</button>
+                <br>
                 <button class="change-count">Chấp nhận thay đổi</button>
                 <br>
                 <button class="delete-btn">Delete Sản phẩm</button>
@@ -48,6 +50,9 @@ update.addEventListener('click', () => {
     const btnDeleteYes = document.querySelector('#delete-yes')
     const btnDeleteNo = document.querySelector('#delete-no')
     const alterDelete =  document.querySelector('.alter-delete')
+    ///
+    const BtnChangeImgBox=document.querySelectorAll('.btn-change-img-one');
+    const ParentBox=document.querySelector(".parent-box-change-one-product-img");
     for (let i = 0; i < sl.length; i++) {
         btnChange[i].addEventListener('click', () => {
             sl[i]=Number(numChange[i].value)+sl[i];
@@ -68,6 +73,9 @@ update.addEventListener('click', () => {
             })
             
         });
+        BtnChangeImgBox[i].addEventListener("click",()=>{
+            ParentBox.style.display="block";
+        })
     }
     
     
@@ -229,4 +237,6 @@ displayimg.forEach((element,index) => {
         displayBigImg.src = imagePaths[0];
     })
 });
-//  JS cho nut add product
+//  JS cho sửa Ảnh
+
+

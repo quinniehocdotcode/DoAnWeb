@@ -306,6 +306,7 @@
     border-radius: 3px;
     border:1px solid  #c43333;
     outline: none;   
+    font-size:17px;
 }
 
 input:not(input[type="checkbox"]){
@@ -478,5 +479,40 @@ input::-webkit-inner-spin-button{
     object-fit:contain;
     width: 100%;
     height: 100%;
+}
+
+/* CSS cho box change img */
+.parent-box-change-one-product-img{
+    padding: 0 35vw;
+    position: fixed;
+    top: 50%;
+}
+.box-change-one-product-img{
+    display: flex;
+    padding: 10px 10px;
+    background-color:#a06d6d;
+    border-radius: 5px;
+}
+.box-left{
+    width: 30%;
+}
+.box-left img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.box-right{
+    width: 70%;
+    padding: 10%;
+}
+.box-right button{
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 50px;
+    color:white;
+    margin-top: 10px;
+    width: 70%;
+    border: none;
+    background-color: #C92127;
 }
 
