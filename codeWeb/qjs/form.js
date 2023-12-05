@@ -56,7 +56,7 @@ submitBtn.addEventListener('click',()=>{
         if(email.value === ad.email ){
 
             if(password.value === ad.password){
-               location.replace('/seller');
+               location.replace('/admin');
             }  
             else  {
                 return showAlert("Sai Mat Khau Ban oi!!!");

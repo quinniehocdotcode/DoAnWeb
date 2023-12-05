@@ -7,11 +7,110 @@
     <link rel="stylesheet" href="qcss/style.css">
     <link rel="stylesheet" href="qcss/login.css">
     <link rel="stylesheet" href="qcss/signup.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="qcss/style.css">
+    <link rel="stylesheet" href="qcss/style_qh.css">
+    <link rel="stylesheet" href="qcss/main_qh.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
-
-    </header>
+    <div>
+        <img class="img_header" src="images/FahasaT3W2_Header_1263x60.jpg" alt="" class="click-header-ne">
+                <nav class="navbar_header">
+                    <img class="logo_header" src="images/fahasa-logo.png" alt="logo">
+                    <div class="menu_header">
+                        <div class="icon">
+                            <img class="icon_menu"
+                                src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_menu.svg" alt="">
+                            <img class="icon_seemore"
+                                src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/icon_seemore_gray.svg"
+                                alt="">
+                        </div>
+                        <div class="theloai">
+                            <h2>Thể Loại</h2>
+                            <ul>
+                                <li><a onclick="filterProduct('vanhoc')">VĂN HỌC</a></li>
+                                <li><a onclick="filterProduct('kinhte')">KINH TẾ</a></li>
+                                <li><a onclick="filterProduct('tamlykynangsong')">TÂM LÝ - KỸ NĂNG SỐNG</a></li>
+                                <li><a onclick="filterProduct('nuoidaycon')">NUÔI DẠY CON</a></li>
+                                <li><a onclick="filterProduct('thieunhi')">THIẾU NHI</a></li>
+                                <li><a onclick="filterProduct('lichsu')">LỊCH SỬ</a></li>
+                                <li><a onclick="filterProduct('giaotrinh')">GIÁO TRÌNH</a></li>
+                                <li><a onclick="filterProduct('ngoaingu')">NGOẠI NGỮ</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav_overlay"></div>
+                    </div>
+                    <div class="search">
+                        <input id="searchBox" class="input_search" type="search" placeholder="Tìm kiếm"
+                            onkeypress="searchOnEnter(event,'searchBox')">
+                        <div onclick="searchProduct('searchBox')" class="icon_search"><img
+                                src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_search_white.svg"
+                                alt=""></div>
+                    </div>
+                    <div class="tienich">
+                        <figure>
+                            <img class="icon_notifications"
+                                src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_noti_gray.svg"
+                                alt="">
+                            <figcaption>Thông Báo</figcaption>
+                        </figure>
+                        <figure>
+                            <!-- gio hang -->
+                            <button id="cart">
+                                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                                Giỏ Hàng
+                            </button>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Giỏ Hàng</h5>
+                                        <span >Trạng thái đơn hàng: <span  class="status-text">Chưa xác nhận</span></span>
+                                        
+                                        <span class="close">&times;</span>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="cart-row">
+                                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                            <span class="cart-price cart-header cart-column">Giá</span>
+                                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                                        </div>
+                                        <div class="cart-items">
+                                           
+                                        </div>
+                                        <div class="cart-total">
+                                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                                            <span class="cart-total-price">0VNĐ</span>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- gio hang -->
+                        </figure>
+                        <!-- Đăng nhập- đăng ký -->
+                        <figure class="parent-from-login-logout">
+                            <img class="icon_account"
+                                src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_account_gray.svg"
+                                alt="">
+                            <figcaption>Tài Khoản</figcaption>
+                            <div class="from-login-logout hide">
+                                <button id ="login-logout">Đăng nhập</button>
+                                <br>
+                                <button id="signup">Đăng ký</button>
+                                <br>
+                                <button id="login-by-fb"><i class='bx bxl-facebook-circle' ></i><span>Facebook</span></button>
+                            </div>
+                        </figure>
+                        <!-- đăng nhập - đăng ký -->
+                    </div>
+                </nav>
+        
+    </div>
     <div class="body-1">
         <img src="anh/loader.gif" class="loader" alt="">
         <div class="alter-box">
@@ -21,7 +120,7 @@
         <div class="container-q">
             <div class="logo-content">
                 <img src="anh/fahasa-logo.png" class="logo" alt="">
-            </div>
+            </div id="form-input-login">
                 <div class="box-input">
                     <label for="number">Số điện thoại</label>
                     <input type="text" id="number" placeholder="Nhập số điện thoại">
@@ -48,6 +147,7 @@
     </div>
    
 </body>
+<footer></footer>
 <script src="qjs/nav.js"></script>
 <script src="qjs/form.js"></script>
 <script src="qjs/token.js"></script>

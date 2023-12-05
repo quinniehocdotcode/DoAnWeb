@@ -7,7 +7,8 @@ body {
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif
 }
-.container {
+.container1 {
+    position: relative;
     background-color: #a99ae8;
     width: 100%;
 }
@@ -15,7 +16,6 @@ body {
 /* ----------css header ---------------*/
 header {
     max-width: 100%;
-    max-height: 130px;
     background-color: white;
 }
 
@@ -33,6 +33,8 @@ header {
     align-items: center;
     padding-bottom: 10px;
     position: relative;
+    
+    z-index: 999;
 }
 .logo_header {
     width: 220px;
@@ -78,16 +80,16 @@ header {
 .theloai {
     background-color:white;
     box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
-    min-height: 50px ;
+    min-height: 61px ;
     display: none;
     position: absolute;
-    top: 60px;
+    top: 61px;
     left: 40px;
     right: 40px;
     border-radius: 8px;
     z-index: 2;
 }
-.theloai h1 {
+.theloai h2 {
     font-size: 24px;
     padding: 20px 0;
     text-align: center;
@@ -105,6 +107,9 @@ header {
     color: black;
     text-decoration: none;
 }
+.theloai ul li:hover{
+    color:#C92127;
+}
 
 /* hien thi danh sach khi chon */
 .menu_header:hover .theloai, .menu_header:hover .nav_overlay{
@@ -118,7 +123,7 @@ header {
 }
 .input_search {
     height: 40px;
-    width: 600px;
+    width: 520px;
     min-width: 300px;
     padding: 0 80px 0 10px;
     border: 1px solid #CDCFD0;
@@ -131,7 +136,7 @@ header {
     background-color: #C92127;
     border: 2px solid #C92127;
     border-radius: 8px;
-    padding: 3px 0px;
+    /* padding: 3px 0px; */
     padding-left: 25px;
     right: 4px;
     top: 5px;
@@ -147,12 +152,14 @@ header {
     display: flex;
     align-content: space-evenly;
     text-align: center;
+    gap: 20px;
+    font-size: 12px;
+    margin-top: 20px;
 }
 figure {
-    margin-right: 20px;
+    /* margin-right: 20px; */
     cursor: pointer;
 }
-
 
 /* content */
 .content {
@@ -177,13 +184,14 @@ figure {
     margin-bottom: 20px;
     height: 334px;
     width: 234px;
+    cursor: pointer;
 }
 .box:hover {
     box-shadow: 0px 0px 20px -8px rgba(0, 0, 0, 0.5);
 }
 
 .box img {
-    width: 190px;
+    /* width: 190px; */
     height: 190px;
     margin-top: 10px;
 }
@@ -194,10 +202,7 @@ figure {
     padding-left: 8px;
     text-align: center;
 }
-.product_name a {
-    text-decoration: none;
-    color: #333;
-}
+
 .product_price {
     color: orange;
     font-size: 18px;
@@ -216,7 +221,8 @@ figure {
     display: flex;
     justify-content: right;
     align-items: center;
-    padding: 20px 50px;
+    padding: 30px 50px;
+    padding-bottom: 20px;
 }
 
 .page-number {
@@ -225,24 +231,88 @@ figure {
     cursor: pointer;
 }
 
-.prev,
-.next {
-    text-decoration: none;
+.pagination>button,
+#page-buttons>button {
+    font-size: medium;
+    margin: 5px;
     padding: 5px 10px;
-    border: 2px solid #333;
-    cursor: pointer;
-    color: black;
-}
-
-.prev {
-    border-radius: 5px 0px 0px 5px;
+    width: auto;
+    color: aliceblue;
+    background-color: rgb(232, 78, 78);
+    border: 0;
+    border-radius: 0.5rem;
 
 }
-
-.next {
-    border-radius: 0px 5px 5px 0px;
+.pagination>button:hover,
+#page-buttons>button:hover{
+    background-color: beige;
+    color: rgb(232, 78, 78);
+    border: 1px solid rgb(232, 78, 78);;
+}
+/* sticker */
+.emoticon {
+    width: 100%;
+    animation: wave 1s linear infinite;
+    border-radius: 50%;
+}
+.widget {
+    width: 150px;
+    height: 150px;
+    position:fixed;
+    bottom: 0%;
+    right: 0%;
+}
+.chu-sticker {
+  background-color: rgb(233, 187, 187);
+  position: absolute;
+  padding: 5px;
+  right: 100%;
+  top: 20px;
+  width: 170px;
+  z-index: 1;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity linear 0.3s;
+  animation: display 3s linear infinite;
+}
+.border-sticker {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid rgb(236, 111, 111);
+    top: calc((100% - 90px) / 2);
+    left: calc((100% - 90px) / 2);
+    overflow: hidden;
+}
+.border-sticker.dong {
+   animation: widgetPulse infinite 1s;
+   border: 2px solid red;
 }
 
+@keyframes wave {
+    40% {
+      transform: rotate(-30deg);
+    }
+    80% {
+      transform: rotate(30deg);
+    }
+  }
+
+@keyframes widgetPulse {
+  to {
+      width: 150px;
+      height: 150px;
+      top: calc((100% - 154px) / 2);
+      left: calc((100% - 154px) / 2);
+      opacity: 0;
+  }
+}
+@keyframes display {
+    to {
+      opacity: 1;
+    }
+}
 
 /* -------------footer--------------- */
 footer {
@@ -294,12 +364,14 @@ footer a {
     width: 30px;
     height: 30px;
     margin-left: 10px;
+    Cursor: pointer;
 }
 
 .icon_account_mobie {
     width: 34px;
     height: 29px;
     margin-left: 10px;
+    Cursor: pointer;
 }
 .input_search_mobie {
     min-width: 200px;
@@ -321,6 +393,7 @@ footer a {
     background-color: rgba(0, 0, 0, 0.3);
     display: none;
     animation: fadeIn linear 0.2s;
+    z-index: 1;
 }
 .theloai_mobie {
     position: fixed;
@@ -335,25 +408,36 @@ footer a {
     transform: translateX(-100%);
     opacity: 0;
     transition: transform linear 0.2s, opacity linear 0.3s;
+    z-index: 2;
 }
 .back {
     position: absolute;
     top: 5px;
     left: 5px;
     cursor: pointer;
+    z-index: 2;
 }
-.theloai_mobie h1 {
+.theloai_mobie h2 {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
     font-size: 24px;
     padding: 10px 0px;
     text-align: center;
     background-color: red;
     color: white;
+    z-index: 1;
 }
-
+.theloai_mobie ul{
+    position: absolute;
+    top: 50px;
+}
 .theloai_mobie ul li {
     margin: 10px 20px;
     /* margin-left: 50px; */
     list-style: none;
+    cursor: pointer;
 }
 .theloai_mobie ul li a {
     font-size: 18px;
@@ -361,6 +445,10 @@ footer a {
     color: black;
     text-decoration: none;
 }
+.theloai_mobie ul li a:hover {
+    background-color: #CDCFD0;
+}
+
 
 #click:checked ~ .overlay_mobie {
     display: block;
@@ -387,55 +475,52 @@ footer a {
     }
 }
 
+/* reponsive cho slideshow */
+@media (max-width: 999px){
+    .sildeshow-left{
+        display: none;
+    }
+}
 
+/* css for form - login - logout - signup */
 
-/* css pop-up */
-
-
-figure{
+.parent-from-login-logout{
     position: relative;
 }
-.pop-up{
+.from-login-logout{
     position: absolute;
-    background-color: white;
-    width: 300px;
-   right: 100%;
-   display: block;
-   padding: 15px 10px;
-
-
+    top:13%;
+    right: 6%;
+    width: 270px;
+    background-color: rgb(236, 70, 70);
+    border-radius:9px ;
+    padding: 15px 30px;
+    box-shadow: 1px 2px 2px 2px rgba(54, 41, 41, 0.477);
+    z-index: 20;
 }
-.pop-up p{
- font-size: 15px;
-}
-.pop-up button{
-    border:none;
+.from-login-logout button {
+    margin: 5px 0;
+    padding: 3px 5px;
     outline: none;
-    width: 70%;
+    border: none;
+    border-radius: 6px;
+    width: 200px;
     height: 40px;
-    margin: 10px 0;
-    cursor: pointer;
-    border-radius: 10px;
     font-size: 15px;
-    font-weight: bolder;
 }
-.pop-up .login-1{
+.from-login-logout button:nth-child(1){
+    color: white;
     background-color: #C92127;
-    color: white;
-    font-weight: 500;
 }
-.pop-up .signin-1{
-    border: 2px solid #C92127;
-    background-color: white;
+.from-login-logout button:nth-child(3){
     color: #C92127;
-    font-weight: 500;
+    background-color: #f9f3f3;
+    border: 3px solid #C92127;
 }
-.pop-up .signin-by-face{
-    background-color: #1478FC;
+.from-login-logout button:nth-child(5){
     color: white;
-    font-weight: 500;
+    background-color:#2489F4;
 }
-.hide{
-    opacity:0;
+.hide {
+    display: none;
 }
-

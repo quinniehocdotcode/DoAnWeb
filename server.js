@@ -29,7 +29,15 @@ app.get("/",(req,res)=>{
 })
 ///signup
 app.get(("/signup"),(req,res)=>{
-    res.sendFile(path.join(staticPath,"signup.html"))
+    res.sendFile(path.join(staticPath,"signup.html"));
+})
+//router login
+app.get('/login',(req,res)=>{
+    res.sendFile(path.join(staticPath,"login.html"))
+})
+/// admin
+app.get(("/admin"),(req,res)=>{
+    res.sendFile(path.join(staticPath,"admin.html"));
 })
 ////
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -41,8 +49,8 @@ app.post('/signup',(req,res)=>{
     if(!number.length){
         return res.json({'alert':'enter your phone number'})
     }
-    else  if(!Number(number.length) ||  number.length < 10){
-        return res.json({'alert':'Số không chứa ký tự và lớn hơn 10 số.'});
+    else  if(!Number(number.length) ||  number.length <= 10){
+        return res.json({'alert':'Số không chứa ký tự và độ dài phải hơn 10 số.'});
     }
     else if(!numberRegex1.test(number) || !numberRegex2.test(number)){
         return res.json({'alert':'Số điện thoại không hợp lệ.'});
@@ -80,10 +88,7 @@ app.post('/signup',(req,res)=>{
     //console.log(req.body); // => gui thong tin ve terminal
     //res.json('data recieved');
 })
-//router login
-app.get('/login',(req,res)=>{
-    res.sendFile(path.join(staticPath,"login.html"))
-})
+
 
 app.post('/login',(req,res)=>{
     let{email,password} = req.body;
@@ -116,9 +121,9 @@ app.post('/login',(req,res)=>{
         }
     })
 })
-//seller router
-app.get("/seller",(req,res)=>{
-    res.sendFile(path.join(staticPath,"seller.html"))
+//admin router
+app.get("/admin",(req,res)=>{
+    res.sendFile(path.join(staticPath,"admin.html"));
 })
 // 404 route
 app.get('/404',(req,res)=>{

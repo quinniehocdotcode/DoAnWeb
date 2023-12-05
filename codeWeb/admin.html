@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="qcss/admin.css" >
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="create-menu-admin">
+        <div class="parent-content-admin-q">
+            <div class="content-admin-q">
+            <div>
+                <table class="list-product"></table>  
+                <div class="papenumber" id="pagination"></div>
+
+            </div>
+            <div class="box-fixInfo-it hide">
+                <div class="box-top">
+                    <img src="" id="img1" alt="anh 1">
+                    <img src="" id="img2" alt="anh 2">
+                </div>
+                <div class="box-bottom">
+                    <label for="input1">Tên sản phẩm</label>
+                    <input type="text" name="" id="input1">
+                    <label for="input2">giá sản phẩm</label>
+                    <input type="text" name="" id="input2">
+                    <input type="file" id="input3">
+                </div>
+                <button id="save-exit">Lưu và thoát</button>
+                <button id="x-exit">X</button>
+            </div>
+            <div class="box-add-delete">
+                <div class="box-add">
+                    <img src="images/anh1.jpg" id="add-display-img" alt="anh xuat hien o day">
+                    <label for="add-name-product">Tên:</label>
+                    <input type="text" id="add-name-product" placeholder="Nhập tên sản phẩm:">
+                    <label for="add-price-product">Giá:</label>
+                    <input type="text" id="add-price-product" placeholder="Gia tiền:">
+                    <label for="add-num-product">Số Lượng:</label>
+                    <input type="text" id="add-num-product" placeholder="Nhập số lượng:">
+                    <label for="add-theloai">Thể Loại:</label>
+                    <select name="" id="add-theloai">
+                        <option value="vanhoc">Văn Học</option>
+                        <option value="kinhte">Kinh tế</option>
+                        <option value="kynangsong">kỹ Năng Sống</option>
+                    </select>
+                    <input type="file" id="add-file-product">
+                    <button id="btn-add-file-img">Thêm</button>
+                </div>
+                <div class="box-delete">
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <!--  -->
+        <div class="parent-get-receipt hide">
+            <div class="get-receipt">
+                <div>
+                    <h1>Danh Sách Đơn Hàng</h1>
+                    <table id="table-get-receipt">
+                        
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!--  -->
+        <div class="parent-get-user-account  hide">
+                <div class="get-user-account">
+                    <h1>User account</h1>
+                </div>
+        </div>
+        
+        <!--  -->
+        <div class="menu-bar-admin">
+            <h1><i class='bx bx-menu'><span class="nosee hide">Menu</span></i></h1>
+            <h1 class="menu-1"><i class='bx bx-window'><span class="nosee hide">List-product</span></i></h1>
+            <h1 class="menu-2"><i class='bx bx-receipt' ><span class="nosee hide">Receipt</span></i></h1>
+            <h1 class="menu-3"><i class='bx bxs-user-account'><span class="nosee hide">User-account</span></i></h1>
+        </div>
+    </div>
+</body>
+<script src="qjs/admin.js"></script>
+</html>
+

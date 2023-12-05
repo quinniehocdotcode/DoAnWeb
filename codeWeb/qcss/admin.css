@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+table{
+        border-collapse: collapse;
+}
+.list-product{
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.list-product tr{
+     height: 30px;
+}
+.list-product td{
+    height: 30px;
+    width: 110px;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 5px;
+}
+
+.list-product img{
+    width: 100%;
+    min-width: 100px;
+    height: 110px;
+}
+button{
+    width: 35px;
+    height: 35px;
+}
+
+.papenumber{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.box-fixInfo-it{
+    position: fixed;
+    top: 15%;
+    left: 15%;
+    width: 70vw;
+    height: 70vh;
+    background-color: #ebe1e1;
+    text-align: center;
+    padding: 25px 0;
+    border-radius: 2px;
+    min-width: 450px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* lưu và thoát */
+.box-fixInfo-it .box-top{
+    margin-bottom:20px ;
+    display: flex;
+    justify-content: space-around;
+}
+.box-fixInfo-it .box-top img{
+    min-width: 10%;
+    max-width: 50%;
+    height: 200px;
+    border: 1px solid #7e6b6b;
+    margin-top: 30px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.box-fixInfo-it .box-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding-left: 400px ; */
+    flex-direction: column;
+    align-items: center;
+}
+.box-fixInfo-it .box-bottom label{
+    width: 60%;
+}
+.box-fixInfo-it .box-bottom input{
+    width: 50%;
+    height: 28px;
+    padding-left: 10px;
+    margin: 5px 0;
+}
+#save-exit{
+    width: 100px;
+
+}
+.hide{
+    display: none;
+}
+/* css cho nut X */
+#x-exit{
+    position: absolute;
+    top:0;
+    right: 0;  
+    padding:8px 12px;
+    margin: 5px 5px;
+    outline: none;
+    background-color: #ccc;
+    border: none;
+}
+/*  css for box-add-delete */
+.content-admin-q{
+    display: flex;
+    padding: 100px 100px;
+    justify-content: space-between;
+    gap: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.box-add-delete{
+    width: 40%;
+    background: #f0ebeb;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+/* box add */
+
+.box-add-delete .box-add {
+    display: grid;
+    grid-row: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.box-add-delete .box-add input,.box-add button,.box-add select,.box-add label{
+    width: 65%;
+    height: 35px;
+    margin: 5px auto;
+    padding-left: 10px;
+}
+.box-add label {
+    height: 10px;
+}
+
+.box-add-delete .box-add img {
+    max-width: 100%;
+    height: 150px;
+    margin: 20px auto;
+}
+@media (max-width: 1260px) {
+    .content-admin-q{
+        flex-direction: column;
+        justify-content: none;
+        min-width: 600px;
+    }
+    .box-add-delete{
+        width: 100%;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 740px){
+    .content-admin-q{
+        padding: 0;
+        margin: 0;
+    }
+}
+.hide{
+    display: none;
+}
+/*  css cho bang */
+.get-receipt{
+   
+}
+.get-receipt div{
+   width: 30vw; 
+   margin: 15% auto;
+   border: 1px solid black;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+   padding: 10px 20px;
+}
+#table-get-receipt  tr td{
+    padding: 10px 10px;
+}
+/*  css cho Menu-bar -admin */
+.create-menu-admin{
+    position: relative;
+}
+.menu-bar-admin{
+    text-align:center;
+    padding: 25px 15px;
+    border-radius: 5px;
+    color: #FFFFEB;
+    width: 5vw;
+    position: fixed;
+    top:10%;
+    left: 0.5%;
+    height: 400px;
+    background-color: #C92127;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+.menu-bar-admin h1{
+    height: 70px;
+}
+.menu-bar-admin h1 i{
+    font-size: 50px;
+}
+.menu-bar-admin:hover{
+    text-align: left;
+    width: 350px;
+}
+.menu-bar-admin:hover h1 span{
+    display: inline;
+    font-size: 25px;
+    margin: 0 5px;
+    padding: 35px 15px;
+}
+.menu-bar-admin h1:not(:first-child):hover  {
+    background-color: #99959594;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+/* CSS for user account */
+.get-user-account h1{
+    font-size: 100px;
+}
