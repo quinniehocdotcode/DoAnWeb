@@ -221,3 +221,11 @@ button{
 .get-user-account h1{
     font-size: 100px;
 }
+#status-receipt{
+    width: 100px;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: #C92127;
+}

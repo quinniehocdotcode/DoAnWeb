@@ -729,6 +729,7 @@ function donhang() {
   btn_status_receipt.addEventListener('click', () => {
     arr_receipt[0].status = 1; // Thay đổi trạng thái đơn hàng khi nhấn nút
     localStorage.setItem("cart",JSON.stringify(arr_receipt))
+    btn_status_receipt.innerHTML="đã xác nhận."
   });
 }
 // 
