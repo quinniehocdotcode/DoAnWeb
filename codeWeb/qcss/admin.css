@@ -382,3 +382,10 @@ table.table td a:hover {
 .content_paging .active{
 	background-color: #2196F3;
 }
+/* css cho nut xac nhan don hang */
+#status-receipt{
+     outline:none;
+     border:none;
+     color:rgb(14, 11, 11);
+     background-color:white;
+}

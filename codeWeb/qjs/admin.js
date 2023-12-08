@@ -676,7 +676,7 @@ let addImgProduct = document.querySelector("#add-file-product");
 let addBtn = document.querySelector('#btn-add-file-img');
 
 let newProduct = {
-    productId: 1,
+    productId: 33,
     name: 'Vầng Trăng Máu',
     category: 'vanhoc',
     description: ``,
@@ -718,10 +718,10 @@ function donhang() {
    let row_receipt ;
    row_receipt = document.createElement('tr');
    row_receipt.innerHTML =`
-      <td>${"Ten"}</td>
-      <td>${"Gia Tien"}</td>
-      <td>${"So luong"}</td>
-      <td>${"Tong tien"}</td>
+      <td>${"Name"}</td>
+      <td>${"Prices"}</td>
+      <td>${"Num"}</td>
+      <td>${"Amount"}</td>
     `;
    table_receipt.appendChild(row_receipt);
   for (let i = 0; i < arr_receipt.length; i++) {
@@ -738,7 +738,7 @@ function donhang() {
 
    row_receipt = document.createElement('tr');
   row_receipt.innerHTML = `
-    <td colspan="4">Thanh Tien: ${tong+" vnd"}</td>
+    <td colspan="4">General: ${parseInt(tong)+" vnd"}</td>
   `;
   table_receipt.appendChild(row_receipt);
 
@@ -763,7 +763,7 @@ function donhang() {
     }
   });
 }
-
+let store_recript = [];
 window.addEventListener('storage',(e)=>{
     if(e.key='cart'){
         arr_receipt = JSON.parse(localStorage.getItem("cart"));
@@ -776,17 +776,6 @@ window.addEventListener('storage',(e)=>{
 
     }
 })
-// setInterval(() => {
-//     arr_receipt = JSON.parse(localStorage.getItem("cart"));
-//   if (arr_receipt[0].status == -1) {
-//     table_receipt.innerHTML = '';
-//     donhang();
-//   } else {
-//     table_receipt.innerHTML = "<h3>Không có đơn hàng</h3>";
-//   }
-// },2000);
-
-
 
 // JS cho Menu-bar-admin
 let menu1 = document.querySelector('.menu-1');

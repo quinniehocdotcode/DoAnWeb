@@ -393,7 +393,10 @@ setInterval(()=>{
   }
   var cart = [];
   var cart_temp={};
+  let login_account ;
   order.onclick = function () {
+    login_account=document.querySelector('#text-status-account');
+    if(login_account.innerHTML != "Login to Order"){
       let cart_item_title = document.querySelectorAll('.cart-item-title'); /// name
       let cart_price = document.querySelectorAll('.cart-price.cart-column.huhu'); // gia
       let cart_quantity_input =  document.querySelectorAll('.cart-quantity-input') /// so luong
@@ -409,6 +412,11 @@ setInterval(()=>{
       localStorage.setItem("cart",JSON.stringify(cart)) //// cay vai~
   
       alert("Đã thanh toán thành công");
+
+    }
+    else{
+      alert("vui long đăng nhập để thành toán.");
+    }
   }
   window.onclick = function (event) {
     if (event.target == modal) {
