@@ -3,7 +3,7 @@ var productArray = [
         productId: 1,
         name: 'Vầng Trăng Máu',
         category: 'vanhoc',
-        description: ``,
+        description: `Vầng trăng máu là một công trình nghiên cứu khá tận tâm, cho thấy một góc nhìn về những cuộc chiến tranh giành dầu mỏ ở quy mô nhỏ, gói gọn trong phạm vi các ngôi làng quy hoạch dành cho những thổ dân bản địa châu Mỹ vào đầu những năm 1900. Cuốn sách phơi bày lịch sử đẫm máu trải dài nhiều thập kỷ, mà nạn nhân chính là một trong những bộ tộc thổ dân hùng mạnh nhất thời bấy giờ, những người Osage.`,
         images: [
             'images/vangtrangmau.jpg',
             'images/giao_khoa_toan_12_page1.jpg',
@@ -17,7 +17,9 @@ var productArray = [
         productId: 2,
         name: 'Đám Trẻ Ở Đại Dương Đen',
         category: 'vanhoc',
-        description: '',
+        description: `Đám trẻ ở đại dương đen là lời độc thoại và đối thoại của những đứa trẻ ở đại dương đen, nơi từng lớp sóng của nỗi buồn và tuyệt vọng không ngừng cuộn trào, lúc âm ỉ, khi dữ dội. Những đứa trẻ ấy phải vật lộn trong những góc tối tâm lý, với sự u uất đè nén từ tổn thương khi không được sinh ra trong một gia đình toàn vẹn, ấm êm, khi phải mang trên đôi vai non dại những gánh nặng không tưởng.
+
+        Song song đó cũng là quá trình tự chữa lành vô cùng khó khăn của đám trẻ, cố gắng vươn mình ra khỏi đại dương đen, tìm cho mình một ánh sáng. Và chính những sự nỗ lực xoa dịu chính mình đó đã hóa thành những câu từ trong cuốn sách này, bất kể đau đớn thế nào.`,
         images: [
             'images/damtreodaiduong.jpg',
             'images/kinh_doanh_thanh_cong_page1.jpg',
@@ -31,7 +33,9 @@ var productArray = [
         productId: 3,
         name: 'Có Một Ngày, Bố Mẹ Sẽ Già Đi',
         category: 'vanhoc',
-        description: '',
+        description: `Mỗi ngày đều có thể nhìn thấy mặt trời, vào những ngày trời quang nắng đẹp, bạn cảm thấy ấm áp và dễ chịu, nó như một thứ đương nhiên nên có, hưởng thụ sự tốt đẹp nó mang lại đã trở thành thói quen của bạn. Nhưng nếu một ngày, có người nói với bạn mặt trời sẽ không mọc nữa, bạn cảm thấy thế nào? Có lẽ phần lớn mọi người đều cảm thấy sợ hãi và luống cuống. Bố mẹ cũng giống như mặt trời, luôn lặng lẽ ở sau lưng, cho bạn chỗ dựa và sự ấm áp, nhưng nếu một ngày bố mẹ không còn ở đấy nữa, cảm giác an toàn quen thuộc cũng lập tức biến mất, bấy giờ muốn tìm lại, sợ rằng đã quá muộn.
+
+        Bởi vì năm tháng vẫn mãi trôi, thời gian không trở lại, tên siêu trộm thời gian đang dần dần lấy đi tuổi xuân của bố mẹ, rồi có một ngày, bố mẹ sẽ già đi.`,
         images: [
             'images/co-mot-ngay-bo-me-se-gia-di.jpg',
             'images/lich_su_the_gioi_page1.jpg',
@@ -45,7 +49,7 @@ var productArray = [
         productId: 4,
         name: 'Sự Im Lặng Của Bầy Cừu (Tái Bản 2019)',
         category: 'vanhoc',
-        description: '',
+        description: `Sự im lặng của bầy cừu hội tụ đầy đủ những yếu tố làm nên một cuốn tiểu thuyết trinh thám kinh dị xuất sắc nhất: không một dấu vết lúng túng trong những chi tiết thuộc lĩnh vực chuyên môn, với các tình tiết giật gân, cái chết luôn lơ lửng, với cuộc so găng của những bộ óc lớn mà không có chỗ cho kẻ ngu ngốc để cuộc chơi trí tuệ trở nên dễ dàng. Bồi đắp vào cốt truyện lôi cuốn đó là cơ hội được trải nghiệm trong trí não của cả kẻ gây tội lẫn kẻ thi hành công lý, khi mỗi bên phải vật vã trong ngục tù của đau đớn để tìm kiếm, khẩn thiết và liên tục, một sự lắng dịu cho tâm hồn.`,
         images: [
             'images/su_im_lang_cua_bay_cuu.jpg',
             'images/tam_ly_hoc_co_ban_page1.jpg',
@@ -59,7 +63,9 @@ var productArray = [
         productId: 5,
         name: 'Thời Kế Quán',
         category: 'vanhoc',
-        description: '',
+        description: `Tầm mười năm về trước, trong rừng sâu mọc lên một kiến trúc kì lạ tên là Thời Kế Quán, gồm một tháp đồng hồ chuyên chỉ giờ lung tung và một biệt thự chôn nửa xuống đất. Trước và sau khi xây Quán, có rất nhiều người liên quan đến nó đã chết, số người thiệt mạng gần đủ để trám kín các ô số trên mặt đồng hồ, lý do không rõ.
+        Chỉ biết từ đó tháp và nhà gần như hoang phế, không ai nhớ đến nữa.
+        Mười năm trôi qua, cây lá đã gần như phủ kín đường vào thì Thời Kế Quán nổi tiếng trở lại, do những người đi rừng bắt gặp ma trôi nổi quanh đó. Tin tức kích thích sự tò mò của một nhóm người chuyên nghiên cứu tâm linh. Họ mời một bà đồng cùng vào Quán để làm lễ gọi hồn, tìm hiểu chân tướng.`,
         images: [
             'images/thoikequan.jpg',
             'images/quan_tri_tam_ly_tinh_yeu_page1.jpg',
@@ -73,7 +79,7 @@ var productArray = [
         productId: 6,
         name: 'Án Mạng Mười Một Chữ',
         category: 'vanhoc',
-        description: '',
+        description: `Tình cờ phát hiện những điều bất thường sau cái chết thảm khốc của người yêu, nhân vật “tôi”, một nữ nhà văn viết tiểu thuyết trinh thám đã cùng bạn mình, Hagio Fuyuko, cũng là biên tập viên phụ trách sách của “tôi” quyết định điều tra về cái chết này. Trong quá trình điều tra hai người phát hiện người yêu của “tôi” đã từng gặp tai nạn lật thuyền trong chuyến du lịch đảo một năm trước. Và khi họ tìm tới những người cũng tham gia chuyến đi đó để tìm hiểu thì những người này cũng lần lượt bị sát hại. Cuối cùng “tôi” buộc phải tự mình phán đoán, điều tra để tìm ra chân tướng sự việc.`,
         images: [
             'images/anmangmuoimotchu.jpg',
             'images/lich_su_de_che_la_ma_page1.jpg',
@@ -86,7 +92,7 @@ var productArray = [
         productId: 7,
         name: 'Đất Rừng Phương Nam - Phiên Bản Điện Ảnh',
         category: 'vanhoc',
-        description: '',
+        description: `Được viết bằng trái tim nhạy cảm, tài quan sát tinh tế, hiểu biết sâu sắc và vốn sống dồi dào, Đất rừng phương Nam là một trong những tác phẩm viết về Nam bộ xuất sắc nhất, làm nổi bật trọn vẹn vẻ đẹp con người và thiên nhiên nơi đây. Mỗi lần đọc là mỗi lần tình yêu xứ sở được khơi gợi đến nao lòng…`,
         images: [
             'images/dat-rung-phuong-nam_ban-dien-anh_bia.jpg',
             'images/lich_su_trieu_dai_trung_hoa_page1.jpg',
@@ -100,7 +106,11 @@ var productArray = [
         productId: 8,
         name: 'Thần Thoại Hy Lạp - Bìa Cứng (Tái Bản 2023)',
         category: 'vanhoc',
-        description: '',
+        description: `Thần thoại Hy Lạp, một di sản văn hóa nhân loại, từ lâu đã trở thành nền tảng văn hóa không chỉ của một quốc gia mà còn là của cả một châu lục - Âu châu.
+
+        Thần thoại Hy Lạp là những câu chuyện lý giải sự hình thành thế giới nhưng lấp lánh bên trong đó là khát khao, là ước mơ khẳng định tầm vóc của con người trước thiên nhiên. Những ước mơ ấy của loài người càng lấp lánh bao nhiêu thì bầu trời đêm thần thoại lại càng huyền bí, càng rộng mở bấy nhiêu.
+        
+        Đó chính là sức hấp dẫn ngàn đời của Thần thoại Hy Lạp.`,
         images: [
             'images/than_thoai_hy_lap.jpg',
             'images/lich_su_cach_mang_phap_page1.jpg',
@@ -550,6 +560,18 @@ localStorage.setItem("productArray",JSON.stringify(productArray));
     let start = rows_per_page * page;
     let end = start + rows_per_page;
     let paginationItems = items.slice(start,end);
+    let header_table = document.createElement('tr');
+    header_table.innerHTML = `
+          <td>${"productId"}</td>
+          <td>${"images"}</td>
+          <td>${"name"}</td>
+          <td>${"category"}</td>
+          <td>${"author"}</td>
+          <td>${"price"}</td>
+          <td>${"soluong"}</td>  
+          <td>  </td>
+        `;
+        wrapper.appendChild(header_table)
     for(let i =0;i<paginationItems.length;i++){
         let row_element = document.createElement('tr');
         row_element.innerHTML = `
@@ -558,7 +580,7 @@ localStorage.setItem("productArray",JSON.stringify(productArray));
           <td>${paginationItems[i].name}</td>
           <td>${paginationItems[i].category}</td>
           <td>${paginationItems[i].author}</td>
-          <td>${paginationItems[i].price}</td>
+          <td>${paginationItems[i].price + " VND"}</td>
           <td>${paginationItems[i].soluong}</td>
           <td>
             <button class="delete-it-product">X</button>
@@ -570,7 +592,7 @@ localStorage.setItem("productArray",JSON.stringify(productArray));
     btnDeleteIt = document.querySelectorAll('.delete-it-product');
     BtnSua = document.querySelectorAll('.fixInfo-it-product');
     for (let i = 0; i<5; i++) {
-        indexid = (current_page-1)*5+i; 
+        indexid = (current_page-1)*5+i; /// dax fix ngon lanh
      btnDeleteIt[i].addEventListener('click', createDeleteHandler(indexid));
      BtnSua[i].addEventListener('click',fiximg(indexid))
   }
@@ -601,7 +623,6 @@ function PaginationButton(page,items){
 Displaylist(productArray,list_element,rows,current_page);
 
 setupPagination(productArray,pagination_element,rows);
-// xoa 1 phan tu khoi arrayProduct
 function createDeleteHandler(index) {
   return function () {
     productArray.splice(index,1);
@@ -609,10 +630,9 @@ function createDeleteHandler(index) {
     setupPagination(productArray,pagination_element,rows);
   };
 }
-/// chinh sửa thông tin sản phẩm.
 function fiximg(index){
     return function(){
-        indexid ;
+        indexid = 
         boxFixInfo.style.display = "block";
         img1.src = productArray[index].images[0];
         input1.value = productArray[index].name;
@@ -682,10 +702,9 @@ addBtn.addEventListener('click',()=>{
     newProduct.category = addTheLoai.value;
     //console.log(newProduct.category)
     newProduct.soluong = Number(addnumProduct.value);
-    newProduct.images[0] = urlimg;
+    newProduct.images = urlimg;
     productArray.push(newProduct);
     //console.log(productArray);
-    localStorage.setItem("productArray",JSON.stringify(productArray));
     Displaylist(productArray,list_element,rows,current_page);
     setupPagination(productArray,pagination_element,rows);
     }
@@ -696,21 +715,30 @@ let table_receipt = document.querySelector('#table-get-receipt');
 
 function donhang() {
   let tong = 0;
+   let row_receipt ;
+   row_receipt = document.createElement('tr');
+   row_receipt.innerHTML =`
+      <td>${"Ten"}</td>
+      <td>${"Gia Tien"}</td>
+      <td>${"So luong"}</td>
+      <td>${"Tong tien"}</td>
+    `;
+   table_receipt.appendChild(row_receipt);
   for (let i = 0; i < arr_receipt.length; i++) {
-    let row_receipt = document.createElement('tr');
+     row_receipt = document.createElement('tr');
     row_receipt.innerHTML =`
       <td>${arr_receipt[i].name}</td>
-      <td>${arr_receipt[i].cash}</td>
+      <td>${arr_receipt[i].cash+" vnd"}</td>
       <td>${arr_receipt[i].quantity}</td>
-      <td>${arr_receipt[i].total}</td>
+      <td>${arr_receipt[i].total+" vnd"}</td>
     `;
     table_receipt.appendChild(row_receipt);
     tong += arr_receipt[i].total;
   }
 
-  let row_receipt = document.createElement('tr');
+   row_receipt = document.createElement('tr');
   row_receipt.innerHTML = `
-    <td colspan="4">Thanh Tien: ${tong}</td>
+    <td colspan="4">Thanh Tien: ${tong+" vnd"}</td>
   `;
   table_receipt.appendChild(row_receipt);
 
@@ -727,24 +755,27 @@ function donhang() {
 
   let btn_status_receipt = document.querySelector('#status-receipt');
   btn_status_receipt.addEventListener('click', () => {
-    arr_receipt[0].status = 1; // Thay đổi trạng thái đơn hàng khi nhấn nút
-    localStorage.setItem("cart",JSON.stringify(arr_receipt))
-    btn_status_receipt.innerHTML="đã xác nhận."
+    if(arr_receipt[0].status = -1){
+        arr_receipt[0].status = 1; // Thay đổi trạng thái đơn hàng khi nhấn nút
+        localStorage.setItem("cart",JSON.stringify(arr_receipt))
+        btn_status_receipt.innerHTML = "Da xac nhan"
+
+    }
   });
 }
-// 
-window.addEventListener('storage', function(event) {
-    if (event.key === 'cart') {
+
+window.addEventListener('storage',(e)=>{
+    if(e.key='cart'){
         arr_receipt = JSON.parse(localStorage.getItem("cart"));
-      if (arr_receipt[0].status == -1) {
+        if (arr_receipt[0].status == -1) {
             table_receipt.innerHTML = '';
             donhang();
           } else {
             table_receipt.innerHTML = "<h3>Không có đơn hàng</h3>";
           }
+
     }
-  });
-// 
+})
 // setInterval(() => {
 //     arr_receipt = JSON.parse(localStorage.getItem("cart"));
 //   if (arr_receipt[0].status == -1) {
@@ -754,6 +785,9 @@ window.addEventListener('storage', function(event) {
 //     table_receipt.innerHTML = "<h3>Không có đơn hàng</h3>";
 //   }
 // },2000);
+
+
+
 // JS cho Menu-bar-admin
 let menu1 = document.querySelector('.menu-1');
 let menu2 = document.querySelector('.menu-2');
@@ -762,20 +796,178 @@ let menuTable = document.querySelector('.parent-content-admin-q');
 let receipt = document.querySelector('.parent-get-receipt');
 let userAccount = document.querySelector('.parent-get-user-account');
 menu1.addEventListener("click",()=>{
-    menuTable.style.display = 'block'
-    receipt.style.display = 'none'
-    userAccount.sytle.display = 'none'
-
-})
+    menuTable.style.display = 'block';
+    receipt.style.display = 'none';
+    userAccount.style.display = 'none';
+});
 menu2.addEventListener("click",()=>{
-    menuTable.style.display = 'none'
-    receipt.style.display = 'block'
-    userAccount.sytle.display = 'none'
-
-})
+    menuTable.style.display = 'none';
+    receipt.style.display = 'block';
+    userAccount.style.display = 'none';
+   
+});
 menu3.addEventListener("click",()=>{
-    menuTable.style.display = 'none'
-    receipt.style.display = 'none'
-    userAccount.sytle.display = 'block'
+    menuTable.style.display = 'none';
+    receipt.style.display = 'none';
+    userAccount.style.display = 'block';
+});
 
-})
+// js cho account user
+
+const accountInfo = [
+    { account: "user1", pass: "11111111", gmail: 'user1@example.com', status: 1 },
+    { account: "user2", pass: "22222222", gmail: "user2@example.com", status: 1 },
+    { account: "user3", pass: "33333333", gmail: "user3@example.com", status: 1 },
+    { account: "user4", pass: "44444444", gmail: "user4@example.com", status: 0 },
+    { account: "user5", pass: "55555555", gmail: "user5@example.com", status: 0 },
+    { account: "user6", pass: "66666666", gmail: "user6@example.com", status: 0 },
+    { account: "user7", pass: "77777777", gmail: "user7@example.com", status: 0 },
+    { account: "user8", pass: "88888888", gmail: "user8@example.com", status: 0 },
+    { account: "user9", pass: "99999999", gmail: "user9@example.com", status: 0 },
+    { account: "user10", pass: "10101010", gmail: "user10@example.com", status: 0 }
+];
+localStorage.setItem('account',JSON.stringify(accountInfo));
+let perPage = 5;
+let currentPage = 1;
+let start = 0;
+let end = perPage;
+const totalPages = Math.ceil(accountInfo.length / perPage);
+
+const btnNext = document.querySelector('.btn-next');
+const btnPrev = document.querySelector('.btn-pre');
+
+function changPage(currentPage) {
+    start = (currentPage - 1) * perPage;
+    end = currentPage * perPage;
+    console.log(start, end);
+}
+
+function createTable() {
+    var table = '';
+    table = '<table class="table table-striped table-hover">';
+    table += '<thead>';
+    table += '<tr>';
+    table += '<th>STT</th>';
+    table += '<th>Name</th>';
+    table += '<th>Email</th>';
+    table += '<th>Password</th>';
+    table += '<th>Status</th>';
+    table += '<th>Actions</th>';
+    table += '</tr>';
+    table += '</thead>';
+    table += '<tbody>';
+
+    const content = accountInfo.map((item, index) => {
+        if (index >= start && index < end) {
+            table += '<tr>';
+            table += '<td>' + (index + 1) + '</td>';
+            table += '<td>' + item.account + '</td>';
+            table += '<td>' + item.gmail + '</td>';
+            table += '<td>' + item.pass + '</td>';
+            table += '<td class="statusCell">' + (item.status === 1 ? 'Đang hoạt động' : 'Đã khoá') + '</td>';
+            table += '<td><a href="#" class="block" data-index="' + index + '">';
+            table += '<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill-lock" viewBox="0 0 16 16">';
+            table += '<path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h5v-1a1.9 1.9 0 0 1 .01-.2 4.49 4.49 0 0 1 1.534-3.693C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4m7 0a1 1 0 0 1 1-1v-1a2 2 0 1 1 4 0v1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1zm3-3a1 1 0 0 0-1 1v1h2v-1a1 1 0 0 0-1-1" />';
+            table += '</svg></a></td>';
+            table += '</tr>';
+            return table;
+        }
+    });
+    table += '<tbody>';
+    table += '</table>';
+    document.getElementById('tableContainer').innerHTML = table;
+
+    // Thêm sự kiện click vào biểu tượng khoá sau khi tạo bảng
+    addBlockEventListeners();
+}
+
+// Hàm thêm sự kiện click vào biểu tượng khoá
+function addBlockEventListeners() {
+    const blockButtons = document.querySelectorAll('.block');
+    blockButtons.forEach((button) => {
+        button.addEventListener('click', function () {
+            const index = this.getAttribute('data-index');
+            if (accountInfo[index].status === 0) {
+                accountInfo[index].status = 1;
+                createTable();
+                localStorage.setItem('account',JSON.stringify(accountInfo));
+            }
+            else{
+                accountInfo[index].status = 0;
+                createTable();
+                localStorage.setItem('account',JSON.stringify(accountInfo));
+            }
+        });
+    });
+}
+
+
+createTable();
+renderListPage();
+
+function renderListPage() {
+    let html = '';
+    html += `<li class="active">${1}</li>`;
+    for (let i = 2; i <= totalPages; i++) {
+        html += `<li>${i}</li>`;
+    }
+    document.getElementById('number-page').innerHTML = html;
+}
+function changClick() {
+    const currentPages = document.querySelectorAll('.number_page li');
+    for (let i = 0; i < currentPages.length; i++) {
+        currentPages[i].addEventListener("click", () => {
+            let value = i + 1;
+            console.log(value);
+            currentPage = value;
+            $('.number_page li').removeClass('active');
+            currentPages[i].classList.add('active');
+            if (currentPage > 1 && currentPage < totalPages) {
+                $('.btn-pre').removeClass('btn-active');
+                $('.btn-next').removeClass('btn-active');
+            }
+            if (currentPage === 1) {
+                $('.btn-pre').addClass('btn-active');
+            }
+            if (currentPage === totalPages) {
+                $('.btn-next').addClass('btn-active');
+            }
+            changPage(currentPage);
+            createTable();
+        })
+    }
+}
+changClick();
+
+
+btnNext.addEventListener("click", () => {
+    currentPage++;
+    if (currentPage > totalPages) {
+        currentPage = totalPages;
+    }
+    if (currentPage === totalPages) {
+        $('.btn-next').addClass('btn-active');
+    }
+    $('.btn-pre').removeClass('btn-active');
+    $('.number_page li').removeClass('active');
+    $(`.number_page li:eq(${currentPage - 1})`).addClass('active');
+    changPage(currentPage);
+    createTable();
+});
+
+btnPrev.addEventListener("click", () => {
+    currentPage--;
+    if (currentPage <= 1) {
+        currentPage = 1;
+    }
+    if (currentPage === 1) {
+        $('.btn-pre').addClass('btn-active');
+    }
+    $('.btn-next').removeClass('btn-active');
+    $('.number_page li').removeClass('active');
+    $(`.number_page li:eq(${currentPage - 1})`).addClass('active');
+    changPage(currentPage);
+    createTable();
+});
+
+

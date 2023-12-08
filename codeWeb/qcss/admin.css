@@ -8,8 +8,6 @@ table{
 }
 .list-product{
     width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
 }
 .list-product tr{
      height: 30px;
@@ -50,8 +48,6 @@ button{
     padding: 25px 0;
     border-radius: 2px;
     min-width: 450px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
 }
 
 /* lưu và thoát */
@@ -64,11 +60,9 @@ button{
     min-width: 10%;
     max-width: 50%;
     height: 200px;
-    border: 1px solid #7e6b6b;
+    border: 1px solid #1c0d0d;
     margin-top: 30px;
     object-fit: cover;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
 }
 .box-fixInfo-it .box-bottom{
     display: flex;
@@ -82,7 +76,7 @@ button{
 }
 .box-fixInfo-it .box-bottom input{
     width: 50%;
-    height: 28px;
+    /* height: 28px; */
     padding-left: 10px;
     margin: 5px 0;
 }
@@ -107,30 +101,24 @@ button{
 /*  css for box-add-delete */
 .content-admin-q{
     display: flex;
-    padding: 100px 100px;
+    padding: 20px 100px;
     justify-content: space-between;
     gap: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
 }
 .box-add-delete{
     width: 40%;
     background: #f0ebeb;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
 }
 /* box add */
 
 .box-add-delete .box-add {
     display: grid;
     grid-row: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
 }
 .box-add-delete .box-add input,.box-add button,.box-add select,.box-add label{
     width: 65%;
     height: 35px;
-    margin: 5px auto;
+    margin: 8px auto;
     padding-left: 10px;
 }
 .box-add label {
@@ -165,7 +153,7 @@ button{
 }
 /*  css cho bang */
 .get-receipt{
-   
+    
 }
 .get-receipt div{
    width: 30vw; 
@@ -177,6 +165,10 @@ button{
 #table-get-receipt  tr td{
     padding: 10px 10px;
 }
+#status-receipt{
+    padding: 0 10px;
+    width:fit-content;
+}
 /*  css cho Menu-bar -admin */
 .create-menu-admin{
     position: relative;
@@ -186,14 +178,17 @@ button{
     padding: 25px 15px;
     border-radius: 5px;
     color: #FFFFEB;
+    min-width: 80px;
     width: 5vw;
     position: fixed;
-    top:10%;
+    top:20%;
     left: 0.5%;
     height: 400px;
-    background-color: #C92127;
+    /* background-color: #C92127; */
+    background-color:#353b48;	
     transition: all 0.3s ease;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    z-index: 1000;
 }
 .menu-bar-admin h1{
     height: 70px;
@@ -218,14 +213,172 @@ button{
 
 }
 /* CSS for user account */
-.get-user-account h1{
-    font-size: 100px;
+body,
+html {
+	line-height: 1.8;
+	font-family: 'Poppins', sans-serif;
+	color: #555e58;
+	text-transform: capitalize;
+	font-weight: 400;
+	margin: 0px;
+	padding: 0px;
 }
-#status-receipt{
-    width: 100px;
-    outline: none;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    background-color: #C92127;
+
+p {
+	font-size: 15px;
+	margin: 12px 0 0;
+	line-height: 24px;
+}
+
+a {
+	color: #333;
+	font-weight: 400;
+
+}
+
+button {
+	cursor: pointer;
+}
+
+ul,
+ol {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+a,
+a:hover,
+a:focus {
+	color: #333;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	overflow: auto;
+}
+
+/*========main-content- navbardesign -start-----*/
+#content{
+	position:relative;
+	background-attachment:#f9fafc;
+}
+
+.top-navbar{
+	width:100%;
+	z-index:9;
+	position:relative;
+	padding:15px 30px;
+	background-color:#353b48;
+}
+
+.xp-breadcrumbbar .page-title{
+	font-size:20px;
+	color:#fff;
+	margin-bottom:0;
+	margin-top:0;
+}
+
+.main-content-user-account {
+	padding: 30px 30px 0px 30px;
+}
+
+/*--table design start----*/
+
+.table-wrapper {
+	background-color: #fff;
+	/* padding: 20px 25px; */
+	margin: 6px 0px 40px 0px;
+	width: 100%;
+	overflow: auto;
+	border-radius: 3px;
+	box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+}
+
+.table-title {
+	background: #353b48;
+	color: #fff;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	left: 0;
+	padding: 10px 30px;
+	border-radius: 0px 0px 0 0;
+}
+
+.table-title h2 {
+	margin: 5px 0 0;
+	font-size: 17px;
+}
+
+table.table tr th,
+table.table tr td {
+	border-color: #e9e9e9;
+	padding: 8px 15px;
+	font-size: 14px;
+	font-weight: 400;
+	vertical-align: middle;
+}
+
+table.table tr th:first-child {
+	width: 60px;
+}
+
+table.table tr th:last-child {
+	width: 100px;
+}
+
+table.table-stripped tbody tr:nth-of-type(odd) {
+	background-color: #fcfcfc;
+}
+
+table.table-stripped.table-hover tbody tr:hover {
+	background-color: #f5f5f5;
+}
+
+table.table td:last-child {
+	opacity: 0.9;
+	font-size: 22px;
+	margin: 0px 5px;
+}
+
+table.table td a {
+	font-weight: bold;
+	color: #566787;
+	display: inline-block;
+	text-decoration: none;
+	outline: none;
+}
+
+table.table td a:hover {
+	color: #2196F3;
+}
+
+/*====== chuyen trang ======*/
+.content_paging {
+	float: right;
+	margin: 0 0 5px;
+}
+
+.content_paging ul li,
+.content_paging ul .number_page
+{
+	display: inline-block;
+}
+.content_paging ul li{
+	background-color: #566787;
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: #f5f5f5;
+	cursor: pointer;
+}
+.content_paging ul .number_page li{
+	margin: 0 5px;
+}
+.content_paging .active{
+	background-color: #2196F3;
 }

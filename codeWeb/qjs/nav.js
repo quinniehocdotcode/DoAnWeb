@@ -41,13 +41,23 @@ const signinBtn=document.querySelector('#signup') // nut dang ky
 const btnPopup = document.querySelector('#login-logout'); // nut dang nhap  orr nut dang xuat
 const signinFaceBook=document.querySelector('#login-by-fb'); // nut dang nhap = fb
 const icon_account_mobile =  document.querySelector('.icon_account_mobie');
+const icon_cart_mobile =  document.querySelector('.icon_mycart_mobie');
+const box_buy_cart =  document.querySelector('.modal');
+console.log(icon_cart_mobile)
+icon_cart_mobile.addEventListener("click",()=>{
+    box_buy_cart.style.display='block';
+})
+
+
+/// click vao icon
+icon_account_mobile.addEventListener("click",()=>{
+    popupUser.classList.toggle('hide');
+})
 /// click vao icon
 iconAccount.addEventListener('click',()=>{
     popupUser.classList.toggle('hide');
 })
-icon_account_mobile.addEventListener("click",()=>{
-    popupUser.classList.toggle('hide');
-})
+
 window.onload = ()=>{
 
     let user = JSON.parse(sessionStorage.user || null)

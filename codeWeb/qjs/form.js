@@ -21,18 +21,18 @@ const ad = {
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const numberRegex1 = /^0[0-9]{9}$/
 const numberRegex2 = /^\+84[0-9]{9}$/
+/// check admin orr user bi khoa o day.
+var account = JSON.parse(localStorage.getItem('account'))
+window.addEventListener("storage",(e)=>{
+    if(e.key = 'account'){
+        account = JSON.parse(localStorage.getItem('account'));
+        console.log(account);
+    }
+})
+// 
 submitBtn.addEventListener('click',()=>{
     if(number != null){
-        // if(number.value.length < 10){
-        //     showAlert('name must be 10 letters long');
-        // }
-        // else if(!Number(number.value) || number.value.length <10)
-        //     showAlert("invalid number,please enter valid one");
-        // else if(!email.value.length)
-        //     showAlert("enter your email!")
-        // else if(password.value.length < 8)
-        //     showAlert("password should be letters long")
-        // else {
+        // phan nay dang ky, no gui du lieu len FireBase.
             loader.style.display='block';
             ///submit form
             sendData('/signup',{
@@ -53,13 +53,35 @@ submitBtn.addEventListener('click',()=>{
             return showAlert("Sai định dạng email");
 
         }
+        // 
+        for(let i=0;i<account.length;i++){
+            if( email.value.toLowerCase() === account[i].gmail.toLowerCase()) {
+                if(password.value ==  null){
+                    showAlert("Vui long dien mat khau.");
+                }
+                if(account[i].status === 0){
+                    loader.style.display='none';
+                    return showAlert("Tai Khoan Cua Ban Da Bi Khoa");
+                }
+                if( password.value === account[i].pass){
+                    location.replace('/');
+                }
+                else{
+                    console.log(password.value ,account[i].pass)
+                    loader.style.display='none';
+                    return showAlert("Mat Khau Sai");
+                }
+                loader.style.display='none';
+            }
+        } 
+        // 
         if(email.value === ad.email ){
 
             if(password.value === ad.password){
                location.replace('/admin');
             }  
             else  {
-                return showAlert("Sai Mat Khau Ban oi!!!");
+                return showAlert("Sai Mat Khau, Vui long nhap lai!");
             }
         }  
          else{
