@@ -677,12 +677,12 @@ let addBtn = document.querySelector('#btn-add-file-img');
 
 let newProduct = {
     productId: 33,
-    name: 'Vầng Trăng Máu',
-    category: 'vanhoc',
+    name: '',
+    category: '',
     description: ``,
-    images:['images/vangtrangmau.jpg'],
-    author: 'David Grann',
-    price: '120.000',
+    images:[''],
+    author: '',
+    price: '',
     soluong: 10
 }
 addImgProduct.addEventListener('change',()=>{
