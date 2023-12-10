@@ -75,7 +75,7 @@ window.onload = function() {
 };
 */// pagination--------
 function createProduct(array) {
-    const itemsPerPage = 4; // Số lượng sản phẩm hiển thị trên mỗi trang
+    const itemsPerPage = 8; // Số lượng sản phẩm hiển thị trên mỗi trang
     let currentPage = 1;
     let currentProducts = array;
 
