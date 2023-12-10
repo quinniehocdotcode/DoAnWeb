@@ -227,6 +227,7 @@ figure {
 .pagination {
     display: flex;
     justify-content: right;
+    margin-right: 60px;
     align-items: center;
     padding: 30px 50px;
     padding-bottom: 20px;
