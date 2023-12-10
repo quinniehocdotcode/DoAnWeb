@@ -758,7 +758,7 @@ function donhang() {
     if(arr_receipt[0].status = -1){
         arr_receipt[0].status = 1; // Thay đổi trạng thái đơn hàng khi nhấn nút
         localStorage.setItem("cart",JSON.stringify(arr_receipt))
-        btn_status_receipt.innerHTML = "Da xac nhan"
+        btn_status_receipt.innerHTML = "Đã xác nhận"
 
     }
   });
@@ -894,6 +894,7 @@ function addBlockEventListeners() {
 createTable();
 renderListPage();
 
+
 function renderListPage() {
     let html = '';
     html += `<li class="active">${1}</li>`;
@@ -902,32 +903,32 @@ function renderListPage() {
     }
     document.getElementById('number-page').innerHTML = html;
 }
-function changClick() {
-    const currentPages = document.querySelectorAll('.number_page li');
-    for (let i = 0; i < currentPages.length; i++) {
-        currentPages[i].addEventListener("click", () => {
-            let value = i + 1;
-            console.log(value);
-            currentPage = value;
-            $('.number_page li').removeClass('active');
-            currentPages[i].classList.add('active');
-            if (currentPage > 1 && currentPage < totalPages) {
-                $('.btn-pre').removeClass('btn-active');
-                $('.btn-next').removeClass('btn-active');
-            }
+
+const numberPages = document.querySelectorAll('.number_page li');
+
+function changeClick() {
+    numberPages.forEach((page, index) => {
+        page.addEventListener("click", () => {
+            currentPage = index + 1;
+
+            numberPages.forEach(item => item.classList.remove('active'));
+            page.classList.add('active');
+
             if (currentPage === 1) {
-                $('.btn-pre').addClass('btn-active');
+                btnPrev.classList.add('btn-active');
+                btnNext.classList.remove('btn-active');
             }
             if (currentPage === totalPages) {
-                $('.btn-next').addClass('btn-active');
+                btnPrev.classList.remove('btn-active');
+                btnNext.classList.add('btn-active');
             }
             changPage(currentPage);
             createTable();
-        })
-    }
+        });
+    });
 }
-changClick();
 
+changeClick();
 
 btnNext.addEventListener("click", () => {
     currentPage++;
@@ -935,11 +936,11 @@ btnNext.addEventListener("click", () => {
         currentPage = totalPages;
     }
     if (currentPage === totalPages) {
-        $('.btn-next').addClass('btn-active');
+        btnNext.classList.add('btn-active');
     }
-    $('.btn-pre').removeClass('btn-active');
-    $('.number_page li').removeClass('active');
-    $(`.number_page li:eq(${currentPage - 1})`).addClass('active');
+    btnPrev.classList.remove('btn-active');
+    numberPages.forEach(item => item.classList.remove('active'));
+    document.querySelector(`.number_page li:nth-child(${currentPage})`).classList.add('active');
     changPage(currentPage);
     createTable();
 });
@@ -949,14 +950,12 @@ btnPrev.addEventListener("click", () => {
     if (currentPage <= 1) {
         currentPage = 1;
     }
-    if (currentPage === 1) {
-        $('.btn-pre').addClass('btn-active');
+    if(currentPage === 1){
+        btnPrev.classList.add('btn-active');
     }
-    $('.btn-next').removeClass('btn-active');
-    $('.number_page li').removeClass('active');
-    $(`.number_page li:eq(${currentPage - 1})`).addClass('active');
+    btnNext.classList.remove('btn-active');
+    numberPages.forEach(item => item.classList.remove('active'));
+    document.querySelector(`.number_page li:nth-child(${currentPage})`).classList.add('active');
     changPage(currentPage);
     createTable();
 });
-
-

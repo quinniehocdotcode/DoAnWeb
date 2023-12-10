@@ -356,12 +356,14 @@ table.table td a:hover {
 .content_paging .active{
 	background-color: #2196F3;
 }
+.content_paging .btn-active{
+    background-color:#ccc;
+}
 /* css cho nut xac nhan don hang */
 #status-receipt{
      outline:none;
      border:none;
-     color:rgb(223, 17, 17);
-     background-color:rgb(252, 250, 250);
+     background-color:rgb(223, 17, 17);
      color:white;
      border: 5px;
 }
