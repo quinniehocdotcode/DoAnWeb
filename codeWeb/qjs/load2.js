@@ -75,7 +75,7 @@ window.onload = function() {
 };
 */// pagination--------
 function createProduct(array) {
-    const itemsPerPage = 4; // Số lượng sản phẩm hiển thị trên mỗi trang
+    const itemsPerPage = 8; // Số lượng sản phẩm hiển thị trên mỗi trang
     let currentPage = 1;
     let currentProducts = array;
 
@@ -155,7 +155,7 @@ function createProduct(array) {
 
     prevPageButton.addEventListener('click', () => {
         if (currentPage > 1) {
-            currentPage--;
+            currentPage=1;
             showProducts(currentPage);
             updatePaginationButtons();
             updatePageButtons();
@@ -164,7 +164,7 @@ function createProduct(array) {
 
     nextPageButton.addEventListener('click', () => {
         if (currentPage < Math.ceil(currentProducts.length / itemsPerPage)) {
-            currentPage++;
+            currentPage= Math.ceil(currentProducts.length / itemsPerPage);
             showProducts(currentPage);
             updatePaginationButtons();
             updatePageButtons();
