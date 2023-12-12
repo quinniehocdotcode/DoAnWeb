@@ -351,28 +351,22 @@ function updatecart() {
   }
  
 }
-/// status text
+/// status text cart
 var statusText = document.querySelector('.status-text');
-setInterval(()=>{
-    let getStatus = JSON.parse(localStorage.getItem("cart"))
-    statusText = document.querySelector('.status-text');
+window.addEventListener('storage', function(event) {
+  if (event.key === 'cart') {
+    getStatus = JSON.parse(localStorage.getItem("cart"))
     if( getStatus[0].status == 1 ){
-        statusText.innerText = "Đã xác nhận";
-    }
-    else if (getStatus[0].status == 0){
-        statusText.innerText = "Chưa xác nhận";
-    }
-    else{
-        statusText.innerText = "Chưa xác nhận";
-    }
-        // let getStatus = JSON.parse(localStorage.getItem("cart"))
-
-},3000)
-
-//
-// 
-// Modal
-
+              statusText.innerText = "Đã xác nhận";
+          }
+          else if (getStatus[0].status == 0){
+              statusText.innerText = "Chưa xác nhận";
+          }
+          else{
+              statusText.innerText = "Chưa xác nhận";
+          }
+  }
+});
   var modal = document.getElementById("myModal");
   var btn = document.getElementById("cart");
   var close = document.getElementsByClassName("close")[0];
@@ -411,11 +405,11 @@ setInterval(()=>{
       }
       localStorage.setItem("cart",JSON.stringify(cart)) //// cay vai~
   
-      alert("Đã thanh toán thành công");
+      alert("Đã đặt hàng thành công.");
 
     }
     else{
-      alert("vui long đăng nhập để thành toán.");
+      alert("vui lòng đăng nhập để đặt hàng.");
     }
   }
   window.onclick = function (event) {

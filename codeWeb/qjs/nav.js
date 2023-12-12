@@ -43,11 +43,12 @@ const signinFaceBook=document.querySelector('#login-by-fb'); // nut dang nhap = 
 const icon_account_mobile =  document.querySelector('.icon_account_mobie');
 const icon_cart_mobile =  document.querySelector('.icon_mycart_mobie');
 const box_buy_cart =  document.querySelector('.modal');
-console.log(icon_cart_mobile)
+
+
 icon_cart_mobile.addEventListener("click",()=>{
     box_buy_cart.style.display='block';
 })
-
+/// click vao logo
 
 /// click vao icon
 icon_account_mobile.addEventListener("click",()=>{
@@ -59,7 +60,7 @@ iconAccount.addEventListener('click',()=>{
 })
 
 window.onload = ()=>{
-
+    let account_login = JSON.parse(localStorage.getItem('status_login'));
     let user = JSON.parse(sessionStorage.user || null)
     if(user!=null){
         popupText.innerHTML = `Login as ${user.email}`;
@@ -67,9 +68,20 @@ window.onload = ()=>{
         signinFaceBook.style.display='none';
         btnPopup.innerHTML='Đăng xuất'
         btnPopup.addEventListener('click',()=>{
-            sessionStorage.clear();
             location.reload();
         })
+    }
+    else if(account_login != ""){
+            popupText.innerHTML = `Login as ${account_login.email}`;
+            signinBtn.style.display='none';
+            signinFaceBook.style.display='none';
+            btnPopup.innerHTML='Đăng xuất';
+            console.log(account_login)
+            localStorage.setItem('status_login',JSON.stringify(""));
+            btnPopup.addEventListener('click',()=>{
+                sessionStorage.clear();
+                location.reload();
+            })
     }
     else {
         popupText.innerHTML = 'Login to Order';
@@ -92,6 +104,9 @@ window.onload = ()=>{
     signinBtn.addEventListener("click",()=>{
         location.href ='/signup';
     })
-    
-   
+    const logo_header = document.querySelector('.logo_header')
+logo_header.addEventListener('click',()=>{
+    location.href ='/';
+})
+ 
 } 

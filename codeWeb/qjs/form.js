@@ -1,5 +1,10 @@
 //// redirect to home page if user logged in
 window.onload = () =>{
+    const logo_header = document.querySelector('.logo_header')
+    console.log(logo_header)
+    logo_header.addEventListener('click',()=>{
+        location.href ='/';
+    })
     if(sessionStorage.user){
         user = JSON.parse(user.authToken,user.email);
         if(compareToken(user.authToken,user.email))
@@ -7,6 +12,7 @@ window.onload = () =>{
             location.replace('/');
         }
     }
+    
 } 
 const loader = document.querySelector('.loader');
 const submitBtn = document.querySelector('.submit-btn');
@@ -18,6 +24,7 @@ const ad = {
     email: 'admin@gmail.com',
     password: '123456789'
 };
+
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const numberRegex1 = /^0[0-9]{9}$/
 const numberRegex2 = /^\+84[0-9]{9}$/
@@ -57,19 +64,24 @@ submitBtn.addEventListener('click',()=>{
         for(let i=0;i<account.length;i++){
             if( email.value.toLowerCase() === account[i].gmail.toLowerCase()) {
                 if(password.value ==  null){
-                    showAlert("Vui long dien mat khau.");
+                    showAlert("Bạn chưa nhập mật khẩu.");
                 }
                 if(account[i].status === 0){
                     loader.style.display='none';
-                    return showAlert("Tai Khoan Cua Ban Da Bi Khoa");
+                    return showAlert("Tài khoản của bạn đã bị khóa");
                 }
                 if( password.value === account[i].pass){
+                    let account_login={
+                        email:''
+                    }
+                    account_login.email =  account[i].gmail;
+                    localStorage.setItem('status_login',JSON.stringify(account_login));
                     location.replace('/');
                 }
                 else{
                     console.log(password.value ,account[i].pass)
                     loader.style.display='none';
-                    return showAlert("Mat Khau Sai");
+                    return showAlert("Sai mật khẩu, vui lòng đăng nhập lại");
                 }
                 loader.style.display='none';
             }
@@ -81,7 +93,7 @@ submitBtn.addEventListener('click',()=>{
                location.replace('/admin');
             }  
             else  {
-                return showAlert("Sai Mat Khau, Vui long nhap lai!");
+                return showAlert("Sai mật khẩu, vui lòng đăng nhập lại!");
             }
         }  
          else{
