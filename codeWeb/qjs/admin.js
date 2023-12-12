@@ -702,7 +702,7 @@ addBtn.addEventListener('click',()=>{
     newProduct.category = addTheLoai.value;
     //console.log(newProduct.category)
     newProduct.soluong = Number(addnumProduct.value);
-    newProduct.images = urlimg;
+    newProduct.images[0] = urlimg;
     productArray.push(newProduct);
     //console.log(productArray);
     Displaylist(productArray,list_element,rows,current_page);

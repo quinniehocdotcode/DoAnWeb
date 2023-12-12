@@ -105,8 +105,8 @@ window.onload = ()=>{
         location.href ='/signup';
     })
     const logo_header = document.querySelector('.logo_header')
-logo_header.addEventListener('click',()=>{
-    location.href ='/';
-})
+    logo_header.addEventListener('click',()=>{
+        location.href ='/';
+    }) 
  
 } 
