@@ -68,6 +68,7 @@ window.onload = ()=>{
         signinFaceBook.style.display='none';
         btnPopup.innerHTML='Đăng xuất'
         btnPopup.addEventListener('click',()=>{
+            sessionStorage.clear();
             location.reload();
         })
     }
@@ -88,7 +89,6 @@ window.onload = ()=>{
         btnPopup.addEventListener('click',()=>{
             location.href ='/login';
         })
-
     }
     signinFaceBook.addEventListener('click',()=>{
         alert("Bạn đã đăng nhập bằng Facebook")

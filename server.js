@@ -37,8 +37,8 @@ app.get(("/admin"),(req,res)=>{
 })
 ////
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const numberRegex1 = /^0[0-9]{9}$/
-const numberRegex2 = /^\+84[0-9]{9}$/
+const numberRegex1 = /^0[0-9]{9}$/;
+const numberRegex2 = /^\+84[0-9]{9}$/;
 app.post('/signup',(req,res)=>{
     let{number,email,password} = req.body;
 // form validations
@@ -49,7 +49,8 @@ app.post('/signup',(req,res)=>{
         return res.json({'alert':'Số không chứa ký tự và lớn hơn 10 số.'});
     }
     else if(!numberRegex1.test(number) || !numberRegex2.test(number)){
-        return res.json({'alert':'Số điện thoại không hợp lệ.'});
+        console.log(number)
+       // return res.json({'alert':'Số điện thoại không hợp lệ.'});
     }
     else if(!email.length || !emailRegex.test(email)){
         return res.json({'alert':'Email không hợp lệ'});
