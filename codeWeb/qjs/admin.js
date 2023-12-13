@@ -10,7 +10,7 @@ var productArray = [
             'images/giao_khoa_toan_12_page2.jpg'
         ],
         author: 'David Grann',
-        price: '120.000',
+        price: '120000',
         soluong: 10
     },
     {
@@ -26,7 +26,7 @@ var productArray = [
             'images/kinh_doanh_thanh_cong_page2.jpg'
         ],
         author: 'Châu Sa Đáy Mắt',
-        price: '69.300',
+        price: '69300',
         soluong: 10
     },
     {
@@ -42,7 +42,7 @@ var productArray = [
             'images/lich_su_the_gioi_page2.jpg'
         ],
         author: 'Nhiều Tác Giả',
-        price: '81.600',
+        price: '81600',
         soluong: 10
     },
     {
@@ -56,7 +56,7 @@ var productArray = [
             'images/tam_ly_hoc_co_ban_page2.jpg'
         ],
         author: 'Thomas Harris',
-        price: '92.000',
+        price: '92000',
         soluong: 10
     },
     {
@@ -72,7 +72,7 @@ var productArray = [
             'images/quan_tri_tam_ly_tinh_yeu_page2.jpg'
         ],
         author: 'Yukito Ayatsuji',
-        price: '143.650',
+        price: '143650',
         soluong: 10
     },
     {
@@ -86,7 +86,7 @@ var productArray = [
             'images/lich_su_de_che_la_ma_page2.jpg'
         ],
         author: 'Higashino Keigo',
-        price: '93.500',
+        price: '93500',
         soluong: 10
     }, {
         productId: 7,
@@ -99,7 +99,7 @@ var productArray = [
             'images/lich_su_trieu_dai_trung_hoa_page2.jpg'
         ],
         author: 'Đoàn Giỏi',
-        price: '126.000',
+        price: '126000',
         soluong: 10
     },
     {
@@ -117,7 +117,7 @@ var productArray = [
             'images/lich_su_cach_mang_phap_page2.jpg'
         ],
         author: 'Nguyễn Văn Khỏa',
-        price: '265.500',
+        price: '265500',
         soluong: 10
     },
     {
@@ -132,7 +132,7 @@ var productArray = [
             'images/naruto_cuoc_hanh_trinh_page2.jpg'
         ],
         author: 'Napoleon Hill',
-        price: '88.000',
+        price: '88000',
         soluong: 10
     },
     {
@@ -153,7 +153,7 @@ var productArray = [
             'images/my_hero_academia_hoc_vien_sieu_anh_hung_page2.jpg'
         ],
         author: 'Dan Sullivan',
-        price: '227.800',
+        price: '227800',
         soluong: 10
     },
     {
@@ -168,7 +168,7 @@ var productArray = [
             'images/naruto_cuoc_hanh_trinh_page2.jpg'
         ],
         author: 'Jeffrey Sugerman',
-        price: '99.160',
+        price: '99160',
         soluong: 10
 
     },
@@ -184,7 +184,7 @@ var productArray = [
             'images/naruto_cuoc_hanh_trinh_page2.jpg'
         ],
         author: 'Henry Mentor',
-        price: '108.000',
+        price: '108000',
         soluong: 10
     },
     {
@@ -200,7 +200,7 @@ var productArray = [
             'images/naruto_cuoc_hanh_trinh_page2.jpg'
         ],
         author: 'Lê Đỗ Quỳnh Hương',
-        price: '173.600',
+        price: '173600',
         soluong: 10
     },
     {
@@ -216,7 +216,7 @@ var productArray = [
             'images/naruto_cuoc_hanh_trinh_page2.jpg'
         ],
         author: 'Dale Carnegie',
-        price: '60.200',
+        price: '60200',
         soluong: 10
     },
     {
@@ -239,7 +239,7 @@ var productArray = [
             'images/naruto_cuoc_hanh_trinh_page2.jpg'
         ],
         author: 'Tống Mặc',
-        price: '62.300',
+        price: '62300',
         soluong: 10
     },
     {
@@ -256,7 +256,7 @@ var productArray = [
             'images/lich_su_cach_mang_phap_page2.jpg'
         ],
         author: 'Hachun Lyonnet, Hương Đỗ',
-        price: '103.200',
+        price: '103200',
         soluong: 10
     },
     {
@@ -275,7 +275,7 @@ var productArray = [
             'images/lich_su_cach_mang_phap_page2.jpg'
         ],
         author: 'Urako Kanamori',
-        price: '35.100',
+        price: '35100',
         soluong: 10
     },
     {
@@ -302,7 +302,7 @@ var productArray = [
             'images/lich_su_cach_mang_phap_page2.jpg'
         ],
         author: 'Ký Liên Mai',
-        price: '126.650',
+        price: '126650',
         soluong: 10
     },
     {
@@ -317,7 +317,7 @@ var productArray = [
             'images/lich_su_cach_mang_phap_page2.jpg'
         ],
         author: 'Clint Emerson',
-        price: '69.300',
+        price: '69300',
         soluong: 10
     },
     {
@@ -334,7 +334,7 @@ var productArray = [
             'images/lich_su_cach_mang_phap_page2.jpg'
         ],
         author: 'Antoine de Saint-Exupéry',
-        price: '55.300',
+        price: '55300',
         soluong: 10
     },
     {
@@ -349,7 +349,7 @@ var productArray = [
             'images/lich_su_cach_mang_phap_page2.jpg'
         ],
         author: 'Tôn Nguyên Vĩ',
-        price: '39.600',
+        price: '39600',
         soluong: 10
     },
     {
@@ -364,7 +364,7 @@ var productArray = [
             'images/lich_su_cach_mang_phap_page2.jpg'
         ],
         author: 'Hồ Tâm',
-        price: '29.400',
+        price: '29400',
         soluong: 10
     },
     {
@@ -379,7 +379,7 @@ var productArray = [
             'images/lich_su_cach_mang_phap_page2.jpg'
         ],
         author: 'Yuval Noah Harari',
-        price: '151.200',
+        price: '151200',
         soluong: 10
     },
     {
@@ -394,7 +394,7 @@ var productArray = [
             'images/lich_su_cach_mang_phap_page2.jpg'
         ],
         author: 'TS Phan Văn Hoàng',
-        price: '55.250',
+        price: '55250',
         soluong: 10
     },
     {
@@ -409,7 +409,7 @@ var productArray = [
             'images/lich_su_cach_mang_phap_page2.jpg'
         ],
         author: 'Trần Bạch Đằng, Lê Văn Năm, Nguyễn Huy Khôi, Nguyễn Thùy Linh',
-        price: '55.250',
+        price: '55250',
         soluong: 10
     },
     {
@@ -424,7 +424,7 @@ var productArray = [
             'images/lich_su_cach_mang_phap_page2.jpg'
         ],
         author: 'Nguyễn Trung Tín, TRẦN YÊN THẾ (NGUYỄN ĐỨC HÒA), Tôn Nữ Quỳnh Trân, NGUYỄN THÙY LINH, Trần Bạch Đằng, Phan An',
-        price: '148.500',
+        price: '148500',
         soluong: 10
     },
     {
@@ -439,7 +439,7 @@ var productArray = [
             'images/lich_su_cach_mang_phap_page2.jpg'
         ],
         author: 'TS Trương Thị Hiền',
-        price: '76.500',
+        price: '76500',
         soluong: 10
     },
     {
@@ -454,7 +454,7 @@ var productArray = [
             'images/lich_su_cach_mang_phap_page2.jpg'
         ],
         author: 'ThS Phan Hoàng Văn',
-        price: '123.250',
+        price: '123250',
         soluong: 10
     },
     {
@@ -471,7 +471,7 @@ var productArray = [
             'images/lich_su_cach_mang_phap_page2.jpg'
         ],
         author: 'Khương lệ Bình',
-        price: '148.500',
+        price: '148500',
         soluong: 10
     },
     {
@@ -486,7 +486,7 @@ var productArray = [
             'images/lich_su_cach_mang_phap_page2.jpg'
         ],
         author: 'Mai Lan Hương, Hà Thanh Uyên',
-        price: '154.000',
+        price: '154000',
         soluong: 10
     },
     {
@@ -506,7 +506,7 @@ var productArray = [
             'images/lich_su_cach_mang_phap_page2.jpg'
         ],
         author: 'The Windy',
-        price: '43.550',
+        price: '43550',
         soluong: 10
     },
     {
@@ -527,7 +527,7 @@ var productArray = [
             'images/lich_su_cach_mang_phap_page2.jpg'
         ],
         author: 'Nhiều Tác Giả',
-        price: '161.000',
+        price: '161000',
         soluong: 10
     },
 
