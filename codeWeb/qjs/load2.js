@@ -109,7 +109,7 @@ function createProduct(array) {
                addItemToCart(name_cart,gia_cart,img_cart )
                // Khi thêm sản phẩm vào giỏ hàng thì sẽ hiển thị modal
               // modal.style.display = "block";
-               
+               alert("Đã thêm vào giỏ hàng thành công")
                updatecart();
               
             })

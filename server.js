@@ -36,28 +36,36 @@ app.get(("/admin"),(req,res)=>{
     res.sendFile(path.join(staticPath,"admin.html"));
 })
 ////
+
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const numberRegex1 = /^0[0-9]{9}$/
-const numberRegex2 = /^\+84[0-9]{9}$/
-app.post('/signup',(req,res)=>{
-    let{number,email,password} = req.body;
-// form validations
-    if(!number.length){
-        return res.json({'alert':'enter your phone number'})
+const numberRegex1 = /^0[0-9]{9}$/;
+const numberRegex2 = /^\+84[0-9]{9}$/;
+
+app.post('/signup', (req, res) => {
+    let { number, email, password } = req.body;
+
+    // Form validations
+    if (!number || !number.length) {
+        return res.json({ 'alert': 'Vui lòng nhập số điện thoại.' });
     }
-    else  if(!Number(number.length) ||  number.length < 10){
-        return res.json({'alert':'Số không chứa ký tự và lớn hơn 10 số.'});
+
+    if (isNaN(number) || number.length < 10) {
+        return res.json({ 'alert': 'Số điện thoại không chứa ký tự và phải có ít nhất 10 số.' });
     }
-    else if(!numberRegex1.test(number) || !numberRegex2.test(number)){
-        return res.json({'alert':'Số điện thoại không hợp lệ.'});
+
+    if (!numberRegex1.test(number) && !numberRegex2.test(number)) {
+        console.log(number);
+        return res.json({ 'alert': 'Số điện thoại không hợp lệ.' });
     }
-    else if(!email.length || !emailRegex.test(email)){
-        return res.json({'alert':'Email không hợp lệ'});
-    }   
-    else if(password.length < 8){
-        return res.json({'alert':'Mật khẩu phải dài hơn 8 ký tự.'});
+
+    if (!email || !email.length || !emailRegex.test(email)) {
+        return res.json({ 'alert': 'Email không hợp lệ.' });
     }
-    
+
+    if (password.length < 8) {
+        return res.json({ 'alert': 'Mật khẩu phải dài hơn 8 ký tự.' });
+    }
+
         //store user in data base
     db.collection('users').doc(email).get()
     .then(user => {
