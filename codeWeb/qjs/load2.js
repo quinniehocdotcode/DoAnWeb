@@ -163,7 +163,7 @@ function createProduct(array) {
                 const nextButton = createPageButton(currentPage + 1);
                 pageButtonsContainer.appendChild(nextButton);
             }
-        }
+        }       
     }
 
     prevPageButton.addEventListener('click', () => {
@@ -188,7 +188,6 @@ function createProduct(array) {
     showProducts(currentPage);        
     updatePaginationButtons();
     updatePageButtons();
-    
 }
 
 document.addEventListener('DOMContentLoaded', function () {
