@@ -96,6 +96,7 @@ function createProduct(array) {
             const productBox = createProductBox(product);
             container.appendChild(productBox);
         }
+        
         btntest = document.querySelectorAll('.btn-buy-it');
         product_price =  document.querySelectorAll('.product_price')
         product_name =  document.querySelectorAll('.product_name')
@@ -120,6 +121,17 @@ function createProduct(array) {
     function updatePaginationButtons() {
         prevPageButton.disabled = currentPage === 1;
         nextPageButton.disabled = currentPage === Math.ceil(currentProducts.length / itemsPerPage);
+        if (currentPage === 1) {
+          prevPageButton.style.display = 'none';
+        } else {
+          prevPageButton.style.display = 'block'; // Hoặc 'inline' tùy thuộc vào kiểu hiển thị mong muốn
+        }
+        
+        if (currentPage === Math.ceil(currentProducts.length / itemsPerPage)) {
+          nextPageButton.style.display = 'none';
+        } else {
+          nextPageButton.style.display = 'block'; // Hoặc 'inline' tùy thuộc vào kiểu hiển thị mong muốn
+        }
     }
 
     function createPageButton(page) {
@@ -150,7 +162,7 @@ function createProduct(array) {
                 const nextButton = createPageButton(currentPage + 1);
                 pageButtonsContainer.appendChild(nextButton);
             }
-        }
+        }       
     }
 
     prevPageButton.addEventListener('click', () => {
@@ -170,8 +182,9 @@ function createProduct(array) {
             updatePageButtons();
         }
     });
-
-    showProducts(currentPage);
+    
+   
+    showProducts(currentPage);        
     updatePaginationButtons();
     updatePageButtons();
 }

@@ -78,9 +78,8 @@ window.onload = ()=>{
             signinFaceBook.style.display='none';
             btnPopup.innerHTML='Đăng xuất';
             console.log(account_login)
-            localStorage.setItem('status_login',JSON.stringify(""));
             btnPopup.addEventListener('click',()=>{
-                sessionStorage.clear();
+                localStorage.setItem('status_login',JSON.stringify(""));
                 location.reload();
             })
     }
