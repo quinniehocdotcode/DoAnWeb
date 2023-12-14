@@ -1,3 +1,4 @@
+localStorage.setItem('status_login',JSON.stringify(""));
 var productArray = [
     {
         productId: 1,

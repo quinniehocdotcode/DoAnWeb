@@ -1,3 +1,4 @@
+
 var productArray = JSON.parse(localStorage.getItem("productArray"));
     var btntest = document.querySelectorAll('.btn-buy-it');
     var product_price =  document.querySelectorAll('.product_price')
@@ -28,7 +29,7 @@ function createProductBox(productData) {
     productBox.appendChild(productName);
 
     const productPrice = document.createElement('div');
-    productPrice.classList.add('product_price'); // class nef
+    productPrice.classList.add('product_price'); 
    // console.log(productPrice)
     productPrice.textContent = `${productData.price} đ`;
     productBox.appendChild(productPrice);
