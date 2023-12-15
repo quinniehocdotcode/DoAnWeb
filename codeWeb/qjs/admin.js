@@ -701,17 +701,15 @@ addBtn.addEventListener('click',()=>{
     newProduct.name = addNameProduct.value;
     newProduct.price = addPriceProduct.value;
     newProduct.category = addTheLoai.value;
-    //console.log(newProduct.category)
     newProduct.soluong = Number(addnumProduct.value);
     newProduct.images[0] = urlimg;
     productArray.push(newProduct);
-    //console.log(productArray);
     Displaylist(productArray,list_element,rows,current_page);
     setupPagination(productArray,pagination_element,rows);
     }
 })
 //  JS-Sử lý đơn hàng
-let arr_receipt = JSON.parse(localStorage.getItem("cart")); // Mảng đơn hàng
+let arr_receipt = JSON.parse(localStorage.getItem("cart")); 
 let table_receipt = document.querySelector('#table-get-receipt');
 
 function donhang() {
